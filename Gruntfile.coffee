@@ -15,21 +15,23 @@ module.exports = (grunt) ->
           the_footer: '<%= partialPath %>footer.html'
         data:
           version: '<%= grunt.template.today("yyyymmddHH") %>'
+        relative: true
+        beautify: true
       main:
-        dest: 'dist/html/'
+        dest: 'dist/'
         src: ['**/*.html','!partials/*.html']
         expand: true
-        cwd: 'src/template/'
+        cwd: 'src'
     clean:
-      build: ['../htdocs/html/**']   
+      build: ['dist/*.html','!css/**','!js/**']    
       options:
         force: true
     copy:
       build:
-        dest: '../htdocs/html/'
+        dest: 'dist/'
         src: ['**', '!data.json']
         expand: true
-        cwd: 'dist/html/'
+        cwd: 'dist/'
     connect:
       server:
         options:
