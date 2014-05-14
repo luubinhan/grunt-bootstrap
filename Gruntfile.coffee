@@ -1,12 +1,12 @@
 module.exports = (grunt) ->
   grunt.initConfig
     serverConf: grunt.file.readJSON("server.json")
-    partialPath: 'src/template/partials/'
+    partialPath: 'src/partials/'
     watch:
       options:
         livereload: true
       html:
-        files: ['src/template/**/*.html']
+        files: ['src/**/*.html']
         tasks: ['htmlbuild:main']
     htmlbuild:
       options:            
