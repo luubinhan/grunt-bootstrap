@@ -8,6 +8,10 @@ module.exports = (grunt) ->
       html:
         files: ['src/**/*.html']
         tasks: ['htmlbuild:main']
+      css:
+        files: ['dist/*.css']
+      scripts:
+        files: ['dist/*.js']        
     htmlbuild:
       options:            
         sections:
