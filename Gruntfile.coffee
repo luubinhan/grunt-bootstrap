@@ -42,6 +42,7 @@ module.exports = (grunt) ->
           base: 'dist'
           hostname: '<%= serverConf.hostname %>'
           port: '<%= serverConf.port %>'
+          livereload: true
 
   require('load-grunt-tasks')(grunt)
   grunt.registerTask 'default', ['connect', 'watch']
