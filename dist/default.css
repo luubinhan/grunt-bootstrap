@@ -464,8 +464,7 @@ input[type="color"],
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 20px;
-  color: #555555;
-  -webkit-appearance: none;
+  color: #555555;  
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
