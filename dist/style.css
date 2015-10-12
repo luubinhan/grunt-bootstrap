@@ -2,149 +2,20 @@
 /*
 Theme Name: 
 Author: An Luu
-Author URI: luckyluu.tumblr.com
+Author URI: 
 Description: 
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: 
+Tags: 
 */
 /* 
-  == Table of content =========================================
-  1 : RESET AND GRID
-  2 : BASE
-      2.1 : Headings
-      2.2 : List - Text - Link
-      2.3 : Form
-      2.4 : Table
-      2.5 : Select
-  3 : MISC
-  4 : MAIN
-      4.1 : Common Container / Box / Element ;
-      4.2 : Header ;
-      4.3 : Footer ;
-      4.4 : Page home ;
-      4.5 : Page blog ;
-      4.6 : Page blog detail ;
-      4.7 : Pageer ;
-      4.8 : Relate post ;
-      4.9 : Widget ;
-
+ 
 /*-------------------------------------------------------------- 
 1. RESET AND GRID
 -------------------------------------------------------------- */
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;font-size:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:bold}img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic;max-width:100%}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:'';content:none}sub,sup,small{font-size:90%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}svg{overflow:hidden}.alpha{margin-left:0!important}.omega{margin-right:0!important}li ul,li ol{margin:0}ul{list-style-type:disc}ol{list-style-type:decimal}blockquote{margin:1.5em;color:#666;font-style:italic}strong,dfn{font-weight:bold}em,dfn{font-style:italic}sup,sub{line-height:0}abbr,acronym{border-bottom:1px dotted #666}address{margin:0 0 1.5em;font-style:italic}del{color:#666}pre{margin:1.5em 0;white-space:pre}pre,code,tt{font:1em 'andale mono','lucida console',monospace;line-height:1.5}input[type='button'],input[type='submit'],a{cursor:pointer;}input{vertical-align:middle;}
-.row {
-  margin-left: -10px;
-  *zoom: 1;
-}
-
-.row:before,
-.row:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.row:after {
-  clear: both;
-}
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 10px;
-}
-.container {
-  width: 970px;
-  margin: 0 auto;
-}
-.span28 {
-  width: 970px;
-}
-.span27 {
-  width: 935px;
-}
-.span26 {
-  width: 900px;
-}
-.span25 {
-  width: 865px;
-}
-.span24 {
-  width: 830px;
-}
-.span23 {
-  width: 795px;
-}
-.span22 {
-  width: 760px;
-}
-.span21 {
-  width: 725px;
-}
-.span20 {
-  width: 690px;
-}
-.span19 {
-  width: 655px;
-}
-.span18 {
-  width: 620px;
-}
-.span17 {
-  width: 585px;
-}
-.span16 {
-  width: 550px;
-}
-.span15 {
-  width: 515px;
-}
-.span14 {
-  width: 480px;
-}
-.span13 {
-  width: 445px;
-}
-.span12 {
-  width: 410px;
-}
-.span11 {
-  width: 375px;
-}
-.span10 {
-  width: 340px;
-}
-.span9 {
-  width: 305px;
-}
-.span8 {
-  width: 270px;
-}
-.span7 {
-  width: 235px;
-}
-.span6 {
-  width: 200px;
-}
-.span5 {
-  width: 165px;
-}
-.span4 {
-  width: 130px;
-}
-.span3 {
-  width: 95px;
-}
-.span2 {
-  width: 60px;
-}
-.span1 {
-  width: 25px;
-}
-
-
 
 /* --------------------------------------------------------------
 3. BASE
@@ -465,9 +336,7 @@ input[type="color"],
   font-size: 14px;
   line-height: 20px;
   color: #555555;  
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+
 }
 input[type="submit"],
 button[type="submit"] {
@@ -499,13 +368,6 @@ input[type="color"],
 .uneditable-input {
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
-          transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 textarea:focus,
 input[type="text"]:focus,
@@ -525,12 +387,6 @@ input[type="color"]:focus,
 .uneditable-input:focus {
   border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -572,9 +428,7 @@ select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 .uneditable-input,
 .uneditable-textarea {
@@ -582,9 +436,7 @@ input[type="checkbox"]:focus {
   cursor: not-allowed;
   background-color: #fcfcfc;
   border-color: #cccccc;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+
 }
 .uneditable-input {
   overflow: hidden;
@@ -722,9 +574,6 @@ img::-moz-selection{
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .well blockquote {
   border-color: #ddd;
@@ -818,6 +667,7 @@ img.align-center{ margin: 0px auto;}
 .align-right{text-align: right!important;}
 .align-center{text-align: center !important;}
 table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
+.nav {list-style: none; padding: 0; margin: 0;}
 
 
 
@@ -944,3 +794,32 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 .page-404{
   padding: 90px 0;
 }
+
+/* Contact Form 7
+-------------------------------------------------------------- */
+
+body div.wpcf7-response-output {
+  padding: 15px;
+  margin: 0 0 5px;
+}
+body div.wpcf7-validation-errors {  
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;  
+}
+body div.wpcf7-mail-sent-ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+body div.wpcf7-mail-sent-ng {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+body div.wpcf7-spam-blocked {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+/* Contact Form 7 -------------------------------------------- */
