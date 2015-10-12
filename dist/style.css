@@ -801,6 +801,7 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 body div.wpcf7-response-output {
   padding: 15px;
   margin: 0 0 5px;
+  display: inline-block;
 }
 body div.wpcf7-validation-errors {  
   background-color: #fcf8e3;
