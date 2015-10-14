@@ -824,3 +824,24 @@ body div.wpcf7-spam-blocked {
   color: #a94442;
 }
 /* Contact Form 7 -------------------------------------------- */
+
+/* widget_blog
+-------------------------------------------------------------- */
+
+.post-widget-caption {
+  margin-bottom: 5px;
+}
+.post-date {
+  color: #666;
+  display: inline-block;
+}
+.post-category {
+  display: inline-block;
+}
+.post-meta {
+  margin-bottom: 15px;
+}
+.widget-li {
+  margin-bottom: 15px;
+}
+/* widget_blog -------------------------------------------- */
