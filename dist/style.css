@@ -9,154 +9,78 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: 
 */
-/* 
- 
-/*-------------------------------------------------------------- 
-1. RESET AND GRID
--------------------------------------------------------------- */
-
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0;font-size:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}b,strong{font-weight:bold}img{color:transparent;font-size:0;vertical-align:middle;-ms-interpolation-mode:bicubic;max-width:100%}li{display:list-item}table{border-collapse:collapse;border-spacing:0}th,td,caption{font-weight:normal;vertical-align:top;text-align:left}q{quotes:none}q:before,q:after{content:'';content:none}sub,sup,small{font-size:90%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}svg{overflow:hidden}.alpha{margin-left:0!important}.omega{margin-right:0!important}li ul,li ol{margin:0}ul{list-style-type:disc}ol{list-style-type:decimal}blockquote{margin:1.5em;color:#666;font-style:italic}strong,dfn{font-weight:bold}em,dfn{font-style:italic}sup,sub{line-height:0}abbr,acronym{border-bottom:1px dotted #666}address{margin:0 0 1.5em;font-style:italic}del{color:#666}pre{margin:1.5em 0;white-space:pre}pre,code,tt{font:1em 'andale mono','lucida console',monospace;line-height:1.5}input[type='button'],input[type='submit'],a{cursor:pointer;}input{vertical-align:middle;}
-
-/* --------------------------------------------------------------
-3. BASE
--------------------------------------------------------------- */
-html
-{
-    font-size: 100.01%;
-}
-body
-{
-    font-size: 75%;
-    color: #333;
-    line-height: 1.4;
-    font-family: Helvetica, Arial, Tahoma, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: none; 
-}
-
-/* Headings
--------------------------------------------------------------- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 20px;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 1;
-  color: inherit;
-  text-rendering: optimizelegibility;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999999;
-}
-h1 {
-  font-size: 36px;
-  line-height: 40px;
-}
-h2 {
-  font-size: 30px;
-  line-height: 40px;
-}
-h3 {
-  font-size: 24px;
-  line-height: 40px;
-}
-h4 {
-  font-size: 18px;
-  line-height: 20px;
-}
-h5 {
-  font-size: 14px;
-  line-height: 20px;
-}
-h6 {
-  font-size: 12px;
-  line-height: 20px;
-}
-h1 small {
-  font-size: 24px;
-}
-h2 small {
-  font-size: 18px;
-}
-h3 small {
-  font-size: 14px;
-}
-h4 small {
-  font-size: 14px;
-}
 
 /* List - Text - Link
 -------------------------------------------------------------- */
+html {
+  font-size: 100.01%;
+}
 
-a{
-    color: #06c;
-    text-decoration: none;
-    outline: none;
+body {
+  font-size: 75%;
+  color: #333;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
 }
-a:hover{
-    color: #09f;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+
+a {
+  color: #06c;
+  text-decoration: none;
+  outline: none;
 }
+
+a:hover {
+  color: #09f;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 ul,
 ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
+
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
 }
+
 li {
-  
 }
+
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
+
 dl {
   margin-bottom: 20px;
 }
+
 dt,
 dd {
   line-height: 20px;
 }
-dt{
+
+dt {
   font-weight: bold;
 }
-dd{
+
+dd {
   margin-left: 10px;
 }
-.dl-horizontal {
-  *zoom: 1;
-}
-.dl-horizontal:before,
-.dl-horizontal:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-.dl-horizontal:after {
-  clear: both;
-}
+.dl-horizontal{*zoom:1;}
+.dl-horizontal:before,.dl-horizontal:after{display:table;line-height:0;content:"";}
+.dl-horizontal:after{clear:both;}
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -266,248 +190,47 @@ pre code {
   border: 0;
 }
 
-/* Form
+/* List - Text - Link -------------------------------------------------------------- */
+
+/* Select
 -------------------------------------------------------------- */
 
-form {
-  margin: 0 0 20px;
-}
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 40px;
-  color: #333333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-legend small {
-  font-size: 15px;
-  color: #999999;
-}
-label,
-input,
-button,
-select,
-textarea {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
-  outline: medium none;
-}
-input,
-button,
-select,
-textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  display: inline-block;
-  height: 20px;
-  padding: 4px 6px;
-  margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #555555;  
-
-}
-input[type="submit"],
-button[type="submit"] {
-  -webkit-appearance: none;
-}
-input,
-textarea,
-.uneditable-input {
-  width: 206px;
-}
-textarea {
-  height: auto;
-}
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-}
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  outline: 0;
-}
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  *margin-top: 0;
-  line-height: normal;
-  cursor: pointer;
-}
-input[type="file"],
-input[type="image"],
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-}
-select,
-input[type="file"] {
-  height: 30px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-
-  *margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
-
-  line-height: 30px;
-}
-select {
-  width: 220px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-}
-select[multiple],
-select[size] {
-  height: auto;
-}
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: none;
-}
-.uneditable-input,
-.uneditable-textarea {
-  color: #999999;
-  cursor: not-allowed;
-  background-color: #fcfcfc;
-  border-color: #cccccc;
-
-}
-.uneditable-input {
-  overflow: hidden;
-  white-space: nowrap;
-}
-.uneditable-textarea {
-  width: auto;
-  height: auto;
-}
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   color: #999999;
 }
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #999999;
 }
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
 }
 
-/* Table
--------------------------------------------------------------- */
-
-table{
-    margin-bottom: 0.4em;
-    width: 100%;
-}
-th{
-    font-weight: bold;
-}
-thead th{
-    
-}
-th, td, caption{
-    padding: 4px 10px 4px 4px;
-    vertical-align: middle;
-}
-tbody tr:nth-child(even) td, tbody tr.even td{
-
-}
-tfoot{
-    font-style: italic;
-}
-caption{
-    background: #eee;
+::selection {
+  background: #00569f; /* Safari */
+  color: #fff;
 }
 
-/* Select
--------------------------------------------------------------- */
-
-::selection{
-    background: #00569f; /* Safari */
-    color: #fff;
-}
-::-moz-selection{
-    background: #00569f; /* Firefox */
-    color: #fff;
-}
-img::selection{
-    background: transparent;
-}
-img::-moz-selection{
-    background: transparent;
+::-moz-selection {
+  background: #00569f; /* Firefox */
+  color: #fff;
 }
 
+img::selection {
+  background: transparent;
+}
 
+img::-moz-selection {
+  background: transparent;
+}
 
-/*-------------------------------------------------------------- 
-2. MISC
+/* Select-------------------------------------------------------------- */
+
+/* MISC 
 -------------------------------------------------------------- */
 
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
@@ -565,79 +288,6 @@ img::-moz-selection{
 .muted{color: #999;}
 .color{color: rgb(255,51,51) !important;}
 .link{color: #000;}
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-.well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-.well-large {
-  padding: 24px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-.well-small {
-  padding: 9px;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-}
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-     -moz-transition: opacity 0.15s linear;
-       -o-transition: opacity 0.15s linear;
-          transition: opacity 0.15s linear;
-}
-.fade.in {
-  opacity: 1;
-}
-.collapse {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-     -moz-transition: height 0.35s ease;
-       -o-transition: height 0.35s ease;
-          transition: height 0.35s ease;
-}
-.collapse.in {
-  height: auto;
-}
-.close {
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-}
-.close:hover {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
 ul.style1{
     padding: 0;
     margin: 0 0 20px 0;
@@ -667,13 +317,9 @@ img.align-center{ margin: 0px auto;}
 .align-right{text-align: right!important;}
 .align-center{text-align: center !important;}
 table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
-.nav {list-style: none; padding: 0; margin: 0;}
 
 
-
-/* --------------------------------------------------------------
-4. MAIN
--------------------------------------------------------------- */
+/* MISC -------------------------------------------------------------- */
 
 /* Header
 -------------------------------------------------------------- */
