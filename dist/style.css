@@ -194,21 +194,23 @@ pre code {
 
 /* Select
 -------------------------------------------------------------- */
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #999999;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999;
+  opacity: 1;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #999999;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #999999;
-}
 
 ::selection {
   background: #00569f; /* Safari */
