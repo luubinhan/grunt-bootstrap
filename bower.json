@@ -1,0 +1,11 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "authors": [
+    "luckyluu"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
