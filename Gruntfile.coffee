@@ -15,8 +15,13 @@ module.exports = (grunt) ->
     htmlbuild:
       options:            
         sections:
-          the_header: '<%= partialPath %>header.html'
-          the_footer: '<%= partialPath %>footer.html'
+          section: 
+            slider: '<%= partialPath %>section/section-slider.html'
+          widget: 
+            default_menu: '<%= partialPath %>widget/widget-default-menu.html'
+          layout:
+            header: '<%= partialPath %>layout/header.html'
+            footer: '<%= partialPath %>layout/footer.html'
         data:
           version: '<%= grunt.template.today("yyyymmddHH") %>'
         relative: true

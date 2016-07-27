@@ -1,0 +1,178 @@
+<!-- BEGIN BANNER -->
+<div class="banner-wrapper clearfix">
+    <div class="slideshow-container">
+      <div class="slideshow-content">
+          <div class="slideshow-view">
+              <div class="slideshow-slide slideshow-slide-image">
+                  <img alt="" src="images/slider7.jpg">             
+              </div>
+          </div>
+          <div class="slideshow-view">
+              <div class="slideshow-slide slideshow-slide-image">
+                  <img alt="" src="images/slider3.jpg">             
+              </div>
+          </div>
+          <div class="slideshow-view">
+              <div class="slideshow-slide slideshow-slide-image">
+                  <img alt="" src="images/slider2.jpg">             
+              </div>
+          </div>
+      </div><!-- slideshow-content -->
+      <div class="slideshow-pager">
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+      </div>
+    </div><!-- slideshow-container -->
+    <div class="feature-container">
+      <div class="feature-title">Cam kết luôn mang đến cho khách hàng</div>
+      <ul class="list-feature">
+        <li><i class="icon-star"></i> Tận hưởng món ngon tươi nguyên hương vị</li>
+        <li><i class="icon-star"></i> An tâm sức khỏe, thêm vui truyện trò</li>
+        <li><i class="icon-star"></i> Lợi hơn về giá, tiết kiệm tối đa</li>
+      </ul>
+    </div> <!-- feature-container -->
+  </div><!-- banner-wrapper -->
+<!-- END BANNER -->
+
+<style>
+	
+/* Banner Slider
+-------------------------------------------------------------- */
+
+.banner{
+  max-height: 535px;
+  position: relative;
+  padding-bottom: 8px;
+  background: url("images/banner-shadow.png") center bottom no-repeat;
+  width: 100%;
+  z-index: 999;
+}
+
+.slider{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-next,
+.banner-prev{
+  background: url("images/banner-control.png") no-repeat;
+  width: 30px;
+  height: 60px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+}
+
+.banner-next{
+  right: 0;
+  background-position: right top;
+}
+
+.banner-next:hover{
+  background-position: right bottom;
+}
+
+.banner-prev{
+  left: 0;
+  background-position: left top;
+}
+
+.banner-prev:hover{
+  background-position: left bottom;
+}
+</style>
+
+<script>
+	
+jQuery(document).ready(function($) {
+	// Using custom configuration
+	$(".slider").carouFredSel({
+		items				: 1,
+		responsive			: true,
+		width				: "100%",
+		direction			: "left",
+		scroll : {
+			items			: 1,
+			easing			: "quadratic",
+			duration		: 700,							
+			fx				: "cover-fade",							
+			pauseOnHover	: true
+		}					
+	});	
+});	
+
+/* 
+var $carousel = $('.slideshow-content'),
+        $pager = $('.slideshow-pagination-center');
+ function getCenterThumb() {
+        var $visible = $pager.triggerHandler('currentVisible'),
+            center = Math.floor($visible.length / 2);
+        return center;
+    }
+$carousel.carouFredSel({
+        responsive: true,
+        items: {
+            visible: 1,
+            width: 1200
+        },
+        scroll: {
+            duration: 1000,
+            fx: 'crossfade',
+            pauseOnHover: true,
+            onBefore: function(data) {
+                $('.slideshow-title', $carousel).css({
+                    x: 200,
+                    opacity: 0
+                });
+                $('.slideshow-description', $carousel).css({
+                    x: 200,
+                    opacity: 0
+                });
+                var dataId = data.items.visible.first().find('img').attr('data-id');
+
+                $pager.trigger('slideTo', ['img[data-id="' + dataId + '"]', -getCenterThumb()]);
+                $pager.find('img').removeClass('selected');
+
+                $pager.find('img[data-id="' + dataId + '"]').addClass('selected');
+            },
+            onAfter: function() {
+
+                $('.slideshow-title', $carousel).transition({
+                    x: 0,
+                    opacity: 1
+                });
+                $('.slideshow-description', $carousel).transition({
+                    x: 0,
+                    opacity: 1,
+                    delay: 200
+                });
+                $pager.find('img').eq(getCenterThumb()).addClass('selected');
+            }
+        }
+    });
+    $pager.carouFredSel({
+        width: '100%',
+        auto: false,
+        height: 240,
+        direction: 'down',
+        items: {
+            visible: 'odd'
+        },
+        onCreate: function() {
+            var center = getCenterThumb();
+
+            $pager.trigger('slideTo', [-center, {
+                duration: 0
+            }]);
+            $pager.find('img').eq(center).addClass('selected');
+        }
+    });
+    $pager.find('img').click(function() {
+        var dataId = $(this).attr('data-id');
+        $carousel.trigger('slideTo', ['img[data-id="' + dataId + '"]']);
+    });*/
+</script>
