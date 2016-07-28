@@ -16,7 +16,7 @@ module.exports = (grunt) ->
       options:            
         sections:
           component: 
-            slider: '<%= partialPath %>section/slider.html'
+            slider: '<%= partialPath %>component/slider.html'
           widget: 
             default_menu: '<%= partialPath %>widget/default-menu.html'
           layout:
