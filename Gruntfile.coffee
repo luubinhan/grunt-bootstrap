@@ -15,10 +15,10 @@ module.exports = (grunt) ->
     htmlbuild:
       options:            
         sections:
-          section: 
-            slider: '<%= partialPath %>section/section-slider.html'
+          component: 
+            slider: '<%= partialPath %>section/slider.html'
           widget: 
-            default_menu: '<%= partialPath %>widget/widget-default-menu.html'
+            default_menu: '<%= partialPath %>widget/default-menu.html'
           layout:
             header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'
