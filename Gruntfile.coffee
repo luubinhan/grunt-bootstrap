@@ -17,8 +17,17 @@ module.exports = (grunt) ->
         sections:
           component: 
             slider: '<%= partialPath %>component/slider.html'
+            pager: '<%= partialPath %>component/pager.html'
+            video: '<%= partialPath %>component/content-video.html'
+            product: '<%= partialPath %>component/content-product.html'
+            post: '<%= partialPath %>component/content-post.html'
+            image: '<%= partialPath %>component/content-image.html'
+            gallery: '<%= partialPath %>component/content-gallery.html'
+            job: '<%= partialPath %>component/content-job.html'
           widget: 
             default_menu: '<%= partialPath %>widget/default-menu.html'
+            product_categories: '<%= partialPath %>widget/woo-product-categories.html'
+            top_rated_product: '<%= partialPath %>widget/woo-top-rated-product.html'
           layout:
             header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'
