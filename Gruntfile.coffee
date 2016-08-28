@@ -7,7 +7,7 @@ module.exports = (grunt) ->
         livereload: true
       html:
         files: ['src/**/*.html']
-        tasks: ['htmlbuild:main']
+        tasks: ['htmlbuild:main','concat:css']
       css:
         files: ['dist/*.css']
       scripts:
@@ -50,6 +50,10 @@ module.exports = (grunt) ->
         src: ['**', '!data.json']
         expand: true
         cwd: 'dist/'
+    concat:      
+      css:
+        src: ['src/css/*.css'] 
+        dest: 'dist/css/concat.css'     
     connect:
       server:
         options:
@@ -59,5 +63,6 @@ module.exports = (grunt) ->
           livereload: true
 
   require('load-grunt-tasks')(grunt)
+  grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.registerTask 'default', ['connect', 'watch']
-  grunt.registerTask 'build', ['clean:build', 'copy:build']
+  grunt.registerTask 'build', ['clean:build', 'copy:build', 'concat:css']

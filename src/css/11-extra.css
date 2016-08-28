@@ -1,0 +1,65 @@
+/* Extra zone
+-------------------------------------------------------------- */
+
+.extra-zone{
+  background: #190d1b url("images/footer.jpg") center top repeat-x;
+  color: #c1b5c5;
+  border-bottom: 1px solid #422a3a;
+  padding: 20px 0 0;
+  font-family: 'vf_avo', Helvetica, sans-serif;
+  -webkit-box-shadow: inset 0px 1px 0px 0px , 45, 64, 1);
+  box-shadow: inset 0px 1px 0px 0px , 45, 64, 1);
+}
+
+.footer-widget-1,
+.footer-widget-2,
+.footer-widget-3,
+.footer-widget-4{
+
+}
+
+.footer-widgets h3{
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.footer-widgets dt{
+  font-weight: normal;
+  font-size: 11px;
+}
+
+.footer-widgets dd{
+  color: #795d82;
+  font-size: 11px;
+}
+
+.footer-widgets a{
+  color: #795d82;
+}
+
+.footer-widgets a:hover{
+  text-decoration: underline;
+}
+
+.home-icon{
+  background: url("images/icons.png") 0 -127px no-repeat;
+  padding-left: 30px;
+}
+
+.phone-icon{
+  background: url("images/icons.png") 0 -177px no-repeat;
+  padding-left: 30px;
+}
+
+.email-icon{
+  background: url("images/icons.png") 0 -229px no-repeat;
+  padding-left: 30px;
+}
+
+.footer-widgets .menu-item{
+  margin-bottom: 0.4em;
+}
+/* Extra zone	-------------------------------------------------------------- */
