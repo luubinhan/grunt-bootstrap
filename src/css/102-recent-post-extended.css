@@ -1,0 +1,72 @@
+/* Recent post widget extend
+-------------------------------------------------------------- */
+
+.rpwe-block ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rpwe-block li{
+  padding: 5px 10px;
+  border-top: 1px dashed #ccc;
+  padding-top: 10px;
+}
+
+.rpwe-block li:first-child{
+  border-top: none;
+}
+
+.rpwe-block a{
+}
+
+.rpwe-block h3{
+  margin-left: 60px;
+  font-size: 12px;
+  line-height: 19px;
+  padding: 0;
+  border-bottom: 0;
+}
+
+.rpwe-thumb{
+  border: 1px solid #EEEEEE !important;
+  box-shadow: none !important;
+  padding: 1px !important;
+}
+
+.rpwe-summary{
+}
+
+.rpwe-time{
+  display: block;
+  margin-left: 60px;
+  font-size: 11px;
+  color: #666;
+}
+
+.rpwe-alignleft{
+  display: inline;
+  float: left;
+}
+
+.rpwe-alignright{
+}
+
+.rpwe-alignnone{
+}
+
+.rpwe-clearfix:before,
+.rpwe-clearfix:after{
+content: "";
+display: table;
+}
+
+.rpwe-clearfix:after{
+clear:both;
+}
+
+.rpwe-clearfix{
+	zoom: 1;
+}
+
+/* Recent post widget extend -------------------------------------------- */

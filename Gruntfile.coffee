@@ -20,12 +20,12 @@ module.exports = (grunt) ->
             pager: '<%= partialPath %>component/pager.html'
             video: '<%= partialPath %>component/content-video.html'
             product: '<%= partialPath %>component/content-product.html'
-            post: '<%= partialPath %>component/content-post.html'
+            post: '<%= partialPath %>component/19-content-post.html'
             image: '<%= partialPath %>component/content-image.html'
             gallery: '<%= partialPath %>component/content-gallery.html'
             job: '<%= partialPath %>component/content-job.html'
           widget: 
-            default_menu: '<%= partialPath %>widget/default-menu.html'
+            wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'
             top_rated_product: '<%= partialPath %>widget/woo-top-rated-product.html'
           layout:

@@ -1,0 +1,102 @@
+/* SECTION CONTACT 
+--------------------------------------------------- */
+.box {
+  -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
+  border-radius: 3px;
+  padding: 30px;
+  background: #fff;
+}
+.contact-form {
+  background: #f4f5f9;
+  padding: 140px 0;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+  color: #2e6da4;
+}
+
+/* SECTION CONTACT ----------------------------- */
+
+/* Contact Form 7
+-------------------------------------------------------------- */
+
+body div.wpcf7-response-output {
+  padding: 15px;
+  margin: 0 0 5px;
+  display: inline-block;
+}
+body div.wpcf7-validation-errors {  
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;  
+}
+body div.wpcf7-mail-sent-ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+body div.wpcf7-mail-sent-ng {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+body div.wpcf7-spam-blocked {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.wpcf7-form-control {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  padding: 0 0 10px 0;
+  line-height: 1.42857;  
+}
+textarea.wpcf7-form-control {
+  height: 150px;
+}
+.wpcf7-text {
+  
+}
+.wpcf7-form-control.wpcf7-not-valid {
+  border-color: red;
+}
+.wpcf7-form-control-wrap  {
+  display: block;
+  margin-bottom: 20px;
+}
+.wpcf7-textarea {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+input.wpcf7-submit {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 1.1;
+  margin-bottom: 0;
+  padding: 10px 30px;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  background: #2e6da4 none repeat scroll 0 0;
+  border: 1px solid #2e6da4;    
+  color: #fff;
+  width: auto;
+  margin-bottom: 15px;
+  border-radius: 23px;
+}
+.wpcf7-response-output {
+  margin-top: 15px;
+}
+
+/* Contact Form 7 -------------------------------------------- */
