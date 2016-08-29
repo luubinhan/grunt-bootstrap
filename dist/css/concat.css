@@ -1,27 +1,25 @@
-	
-/* comments
+/* WP: comments
 -------------------------------------------------------------- */
-
-div.comments{
+div.comments {
   background: #fbfbfb;
   border: 1px solid #dbdbdb;
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.comments .avatar{
+.comments .avatar {
   float: left;
   margin-right: 10px;
   width: 15px;
   height: 15px;
 }
 
-.comment-head{
+.comment-head {
   color: #999;
   font-size: 11px;
 }
 
-.comment-head .name{
+.comment-head .name {
   background: #B41A35;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -30,29 +28,30 @@ div.comments{
   color: #fff;
 }
 
-.reply{
+.reply {
   text-align: right;
   margin-top: 5px;
 }
 
-.comment-entry{
+.comment-entry {
   background: #fff;
   padding: 15px;
   margin-bottom: 10px;
 }
 
-.comments .children{
+.comments .children {
   padding-left: 40px;
-
 }
 
-.comments .children .comment-container{
+.comments .children .comment-container {
   border-left: 4px solid #fbfbfb;
 }
 
-.nocomments{ margin-bottom: 0;}
+.nocomments {
+  margin-bottom: 0;
+}
 
-.comment-respond{
+.comment-respond {
   border-width: 4px 1px 1px;
   border-color: #b41a35 #dbdbdb #dbdbdb;
   border-style: solid;
@@ -60,48 +59,48 @@ div.comments{
   background: #fbfbfb;
 }
 
-.comment-form p{
+.comment-form p {
   *zoom: 1;
 }
 
-.comment-form p:after{
+.comment-form p:after {
   display: block;
   content: '';
   clear: both;
 }
 
-.comment-form label{
+.comment-form label {
   float: left;
   width: 180px;
   margin-right: 20px;
 }
 
-.required{
+.required {
   color: red;
   font-size: 11px;
 }
 
-.comment-reply-title{
+.comment-reply-title {
   margin-bottom: 15px;
 }
 
-.comment-form-url{
+.comment-form-url {
   display: none;
 }
 
-.txt{
+.txt {
   width: 450px;
 }
 
-.comment-form textarea{
+.comment-form textarea {
   width: 450px;
 }
 
-.form-submit{
+.form-submit {
   text-align: right;
 }
 
-.form-submit input[type="submit"]{
+.form-submit input[type="submit"] {
   background: #000;
   border: none;
   color: #fff;
@@ -110,108 +109,135 @@ div.comments{
   margin-right: 17px;
 }
 
-.logged-in-as{
+.logged-in-as {
   margin-bottom: 15px;
 }
-SEARCH FILE
-/* search-box
--------------------------------------------------------------- */
-
-.search-box{
-
-}
-
-.search-form{
-
-}
-
-.label-search{
-
-}
-
-.field-search{
-
-}
-
-#searchsubmit{
-	
-}
-
-/* search-box -------------------------------------------- */
-/* share-social-component
+/* WP: comments -------------------------------------------------------------- */
+/* CUSTOM: share-social-component
 -------------------------------------------------------------- */
 .share-social-component {
-  border-top: 1px solid #e2e2e2;
-  padding-top: 30px;
+	border-top: 1px solid #e2e2e2;
+	padding-top: 30px;
 }
+
 .ssc-label {
-  float: left;
-  padding: 7px 15px 0 0;
-  color: #726e6e;
+	float: left;
+	padding: 7px 15px 0 0;
+	color: #726e6e;
 }
+
 .ssc-buttons {
-  overflow: hidden;
+	overflow: hidden;
 }
+
 .s-link {
-  display: inline-block;
-  padding-right: 7px;
+	display: inline-block;
+	padding-right: 7px;
 }
-/* share-social-component -------------------------------------------------------------- */
-/* pager
+/* CUSTOM: share-social-component -------------------------------------------------------------- */
+/* WP: pager
 -------------------------------------------------------------- */
-
-.wp-pagenavi{
-  border-bottom: 1px solid #d6d6d6;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  text-align: right;
+.wp-pagenavi {
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: right;
 }
+
 .wp-pagenavi a,
-.wp-pagenavi span{
-  display: inline-block;
-  font: 12px/20px 'utm_avoregular', Arial, Tahoma, sans-serif;
-  padding: 3px 10px;
+.wp-pagenavi span {
+	display: inline-block;
+	font: 12px/20px 'utm_avoregular', Arial, Tahoma, sans-serif;
+	padding: 3px 10px;
 }
-.page{
-  color: #333;
-}
-.pages{
 
+.page {
+	color: #333;
 }
-.current{
 
+.pages {
 }
-.larger{
 
+.current {
 }
-.nextpostslink{
 
+.larger {
 }
+
+.nextpostslink {
+}
+/* WP: pager -------------------------------------------------------------- */
 
 /* SECTION NEWSLETTER
 -------------------------------------------------------------- */
 .sn-title {
-
 }
+
 .sn-desc {
-
 }
+
 #subscribeForm {
-
 }
+
 .btn-subscribe {
-
 }
+
 .input-subscription {
-  
 }
 
 /* SECTION NEWSLETTER -------------------------------------------------------------- */
+/* Account 
+-------------------------------------------------------------- */ 
+.account {
+	background: #ededed;
+	padding: 10px 0;
+}
+
+.account .acc-zone {
+	background: url("images/bank.png") no-repeat left center;
+	padding-left: 200px;
+}
+
+.acc-box {
+	float: left;
+	width: 177px;
+	margin-left: 10px;
+}
+
+.acc-note {
+	font-size: 11px;
+	color: #999;
+	margin-bottom: 0;
+}
+
+.acc-num {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.acc-name {
+	font-size: 13px;
+	margin: 0;
+}
+
+.acc-bank {
+	margin-bottom: 10px;
+	padding-top: 5px;
+	font-size: 14px;
+	border-bottom: 1px dotted #9d9d9d;
+	color: #5e5e5e;
+}
 /* Account -------------------------------------------------------------- */ 
-.account{ background: #ededed; padding: 10px 0; } .account .acc-zone{ background: url("images/chuyen-khoan.png") no-repeat left center; padding-left: 200px; } .acc-box{ float: left; width: 177px; margin-left: 10px; } .acc-note{ font-size: 11px; color: #999; margin-bottom: 0; } .acc-num{ font-weight: bold; font-size: 14px; margin-bottom: 0; } .acc-name{ font-size: 13px; margin: 0; } .acc-bank{ margin-bottom: 10px; padding-top: 5px; font-size: 14px; border-bottom: 1px dotted #9d9d9d; color: #5e5e5e; }
 
+/* Single
+-------------------------------------------------------------- */
+.single-post-heading {
+	font-size: 18px;
+}
+/* Single -------------------------------------------------------------- */
 
-/* List - Text - Link
+/* BWP: Recent comment;
 -------------------------------------------------------------- */
 
 .bwp-rc-ulist{
@@ -235,7 +261,7 @@ SEARCH FILE
 .recent-comment-text{
 	
 }
-/* End List - Text - Link -------------------------------------------------------------- */
+/* BWP: Recent comment -------------------------------------------------------------- */
 /* Recent post widget extend
 -------------------------------------------------------------- */
 
@@ -308,7 +334,7 @@ clear:both;
 }
 
 /* Recent post widget extend -------------------------------------------- */
-/* widget_featured_products
+/* Woo: widget_featured_products
 -------------------------------------------------------------- */
 
 .widget_featured_products {}
@@ -320,7 +346,7 @@ clear:both;
 .widget_featured_products a {}
 
 
-/* End widget_featured_products-------------------------------------------------------------- */
+/* Woo: widget_featured_products-------------------------------------------------------------- */
 /* WIDGET: product_list_widget
 -------------------------------------------- */
 .product_list_widget {
@@ -738,8 +764,7 @@ input.wpcf7-submit {
   border-top: none;
 }
 .heading-post {
-  font-size: 1.5em;
-  line-height: 1.3;
+  font-size: 18px;
   margin-bottom: .1em;
 }
 .post-date {

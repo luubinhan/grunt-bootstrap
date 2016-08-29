@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
     <link rel="stylesheet" type="text/css" href="css/woocommerce-layout.css">
+    <link rel="stylesheet" type="text/css" href="css/concat.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-responsive.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -95,11 +96,11 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-left">
+                        <form class="navbar-form navbar-left search-box" method="get" action="">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control s" placeholder="Search" name="s">
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" id="searchsubmit" class="btn btn-default">Submit</button>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
 
@@ -139,11 +140,12 @@
     <main id="master" class="master">
         <div class="master-inner">
             <div class="container">
+
                 <section class="row row-posts">
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -166,7 +168,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -189,7 +191,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -212,7 +214,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -235,7 +237,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -258,7 +260,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -281,7 +283,7 @@
                     <!-- ITEM POST -->
                     <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <figure class="the-post-thumbnail">
-                            <a href="1-single.html"><img src="http://placehold.it/500x500" alt=""></a>
+                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
                         </figure>
                         <section class="the-post-content">
                             <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
@@ -301,8 +303,16 @@
                         </section>
                     </article>
                     <!-- / ITEM POST -->
+
                 </section>
                 <!-- row-posts -->
+                <div class="wp-pagenavi">
+                    <span class="pages">Page 1 of 3</span>
+                    <span class="current">1</span>
+                    <a class="page larger" href="">2</a>
+                    <a class="page larger" href="">3</a>
+                    <a class="nextpostslink" href="">»</a>
+                </div>
             </div>
             <!-- container -->
         </div>

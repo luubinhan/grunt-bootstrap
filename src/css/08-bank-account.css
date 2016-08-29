@@ -1,2 +1,43 @@
+/* Account 
+-------------------------------------------------------------- */ 
+.account {
+	background: #ededed;
+	padding: 10px 0;
+}
+
+.account .acc-zone {
+	background: url("images/bank.png") no-repeat left center;
+	padding-left: 200px;
+}
+
+.acc-box {
+	float: left;
+	width: 177px;
+	margin-left: 10px;
+}
+
+.acc-note {
+	font-size: 11px;
+	color: #999;
+	margin-bottom: 0;
+}
+
+.acc-num {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+.acc-name {
+	font-size: 13px;
+	margin: 0;
+}
+
+.acc-bank {
+	margin-bottom: 10px;
+	padding-top: 5px;
+	font-size: 14px;
+	border-bottom: 1px dotted #9d9d9d;
+	color: #5e5e5e;
+}
 /* Account -------------------------------------------------------------- */ 
-.account{ background: #ededed; padding: 10px 0; } .account .acc-zone{ background: url("images/chuyen-khoan.png") no-repeat left center; padding-left: 200px; } .acc-box{ float: left; width: 177px; margin-left: 10px; } .acc-note{ font-size: 11px; color: #999; margin-bottom: 0; } .acc-num{ font-weight: bold; font-size: 14px; margin-bottom: 0; } .acc-name{ font-size: 13px; margin: 0; } .acc-bank{ margin-bottom: 10px; padding-top: 5px; font-size: 14px; border-bottom: 1px dotted #9d9d9d; color: #5e5e5e; }

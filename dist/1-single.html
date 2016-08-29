@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
     <link rel="stylesheet" type="text/css" href="css/woocommerce-layout.css">
+    <link rel="stylesheet" type="text/css" href="css/concat.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-responsive.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -95,11 +96,11 @@
                                 </ul>
                             </li>
                         </ul>
-                        <form class="navbar-form navbar-left">
+                        <form class="navbar-form navbar-left search-box" method="get" action="">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control s" placeholder="Search" name="s">
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" id="searchsubmit" class="btn btn-default">Submit</button>
                         </form>
                         <ul class="nav navbar-nav navbar-right">
 
@@ -139,37 +140,103 @@
     <main id="master" class="master">
         <div class="master-inner">
             <div class="container">
-                <article class="single-post">
-                    <header class="single-post-heading">Icing caramels lemon drops candy tiramisu danish.</header>
-                    <aside class="post-meta muted">
-                        <span class="day">20</span>,
-                        <span class="month">Tháng 9</span>
-                        <span class="year">2012</span>
-                        <span class="edit label">Sửa</span>
-                    </aside>
-                    <section class="post-content">
-                        <p>
-                            Veggies sunt bona vobis, proinde vos postulo esse magis okra collard greens water spinach lettuce turnip greens kombu pea prairie turnip nori celtuce gram kale wattle seed sierra leone bologi yarrow.
-                        </p>
-                        <p>Water chestnut green bean fennel bunya nuts prairie turnip soybean bell pepper plantain winter purslane gourd ricebean yarrow cauliflower okra radicchio taro tatsoi daikon. Grape broccoli rabe onion tomatillo turnip chickpea arugula
-                            endive cucumber sweet pepper corn brussels sprout ricebean catsear spinach. Carrot lotus root bell pepper ricebean chickweed brussels sprout gumbo.
-                        </p>
-                        <p>Celery daikon pea sprouts broccoli sorrel celery horseradish kombu nori tigernut gram kale bush tomato kakadu plum shallot. Endive gourd chickpea garlic dandelion daikon bell pepper asparagus bok choy garlic eggplant peanut lotus
-                            root sierra leone bologi bitterleaf gumbo kohlrabi cabbage. Rock melon bush tomato okra kombu sierra leone bologi cress. Quandong turnip sorrel aubergine gourd winter purslane garlic spinach napa cabbage wakame kohlrabi corn
-                            ricebean turnip greens. Radish rock melon courgette prairie turnip winter purslane garlic shallot.
-                        </p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <article class="single-post">
+                            <header class="single-post-heading">Icing caramels lemon drops candy tiramisu danish.</header>
 
-                    </section>
-                    <nav class="paged">
-                        <div class="next-post">
+                            <aside class="post-meta muted">
+                                <span class="day">20</span>,
+                                <span class="month">Tháng 9</span>
+                                <span class="year">2012</span>
+                                <span class="edit label">Sửa</span>
+                            </aside>
+                            <section class="post-content">
+                                <p>
+                                    Veggies sunt bona vobis, proinde vos postulo esse magis okra collard greens water spinach lettuce turnip greens kombu pea prairie turnip nori celtuce gram kale wattle seed sierra leone bologi yarrow.
+                                </p>
+                                <p>Water chestnut green bean fennel bunya nuts prairie turnip soybean bell pepper plantain winter purslane gourd ricebean yarrow cauliflower okra radicchio taro tatsoi daikon. Grape broccoli rabe onion tomatillo turnip chickpea
+                                    arugula endive cucumber sweet pepper corn brussels sprout ricebean catsear spinach. Carrot lotus root bell pepper ricebean chickweed brussels sprout gumbo.
+                                </p>
+                                <p>Celery daikon pea sprouts broccoli sorrel celery horseradish kombu nori tigernut gram kale bush tomato kakadu plum shallot. Endive gourd chickpea garlic dandelion daikon bell pepper asparagus bok choy garlic eggplant peanut
+                                    lotus root sierra leone bologi bitterleaf gumbo kohlrabi cabbage. Rock melon bush tomato okra kombu sierra leone bologi cress. Quandong turnip sorrel aubergine gourd winter purslane garlic spinach napa cabbage wakame
+                                    kohlrabi corn ricebean turnip greens. Radish rock melon courgette prairie turnip winter purslane garlic shallot.
+                                </p>
 
+                            </section>
+                            <nav class="paged">
+                                <div class="next-post">
+
+                                </div>
+                                <div class="prev-post">
+
+                                </div>
+                            </nav>
+                        </article>
+                        <!-- single-post-->
+                        <div class="widget widget-container">
+                            <div class="widget-title">Pages</div>
+                            <ul class="bwp-rc-ulist">
+                                <li class="recent-comment"><span class="recent-comment-avatar">%avatar%</span><span class="recent-comment-single"><span class="recent-comment-author">%author%</span><span class="recent-comment-text"> { %excerpt% } – </span> <a href="%link%" title="%post_title_attr%"><strong>%time%</strong></a>
+                                    </span>
+                                </li>
+                                <li class="recent-comment">
+                                    <span class="recent-comment-single">
+					<span class="recent-comment-author">
+						consectetur 
+					</span>
+                                    <span class="recent-comment-text"> 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam iusto itaque tempora error molestias ipsam beatae architecto rerum eligendi quisquam libero doloremque, alias provident veniam cupiditate vel quibusdam. Eligendi, itaque.
+					</span>
+                                    <a href=""><strong>Jul 03, 7:43 AM</strong>
+					</a>
+                                    </span>
+                                </li>
+                                <!-- recent-comment -->
+                                <li class="recent-comment">
+                                    <span class="recent-comment-single">
+					<span class="recent-comment-author">
+						ipsum
+					</span>
+                                    <span class="recent-comment-text"> 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam iusto itaque tempora error molestias ipsam beatae architecto rerum eligendi quisquam libero doloremque, alias provident veniam cupiditate vel quibusdam. Eligendi, itaque.
+					</span>
+                                    <a href=""><strong>Jul 03, 7:43 AM</strong>
+					</a>
+                                    </span>
+                                </li>
+                                <!-- recent-comment -->
+                            </ul>
+                            <!-- bwp-rc-ulist -->
                         </div>
-                        <div class="prev-post">
-
+                    </div>
+                    <!-- col -->
+                    <div class="col-md-3">
+                        <div class="widget widget-container">
+                            <div class="widget-title">Recent Posts</div>
+                            <ul>
+                                <li><a href="1-single.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                                <li><a href="1-single.html">Commodi, rem omnis laudantium quae perferendis?</a></li>
+                                <li><a href="1-single.html">Illo quaerat provident repudiandae maxime ratione.</a></li>
+                            </ul>
                         </div>
-                    </nav>
-                </article>
-                <!-- single-post-->
+                        <!-- widget -->
+                        <div class="widget widget-container">
+                            <div class="widget-title">Pages</div>
+                            <ul>
+                                <li class="page_item"><a href="3-page.html">Lorem ipsum.</a></li>
+                                <li class="page_item"><a href="3-page.html">Fuga, ipsam.</a></li>
+                                <li class="page_item"><a href="3-page.html">Voluptatem, itaque.</a></li>
+                            </ul>
+                        </div>
+                        <!-- widget -->
+
+                    </div>
+                    <!-- col -->
+                </div>
+                <!-- row -->
+
+
             </div>
             <!-- container -->
         </div>

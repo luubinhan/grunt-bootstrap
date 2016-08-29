@@ -1,27 +1,25 @@
-	
-/* comments
+/* WP: comments
 -------------------------------------------------------------- */
-
-div.comments{
+div.comments {
   background: #fbfbfb;
   border: 1px solid #dbdbdb;
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.comments .avatar{
+.comments .avatar {
   float: left;
   margin-right: 10px;
   width: 15px;
   height: 15px;
 }
 
-.comment-head{
+.comment-head {
   color: #999;
   font-size: 11px;
 }
 
-.comment-head .name{
+.comment-head .name {
   background: #B41A35;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -30,29 +28,30 @@ div.comments{
   color: #fff;
 }
 
-.reply{
+.reply {
   text-align: right;
   margin-top: 5px;
 }
 
-.comment-entry{
+.comment-entry {
   background: #fff;
   padding: 15px;
   margin-bottom: 10px;
 }
 
-.comments .children{
+.comments .children {
   padding-left: 40px;
-
 }
 
-.comments .children .comment-container{
+.comments .children .comment-container {
   border-left: 4px solid #fbfbfb;
 }
 
-.nocomments{ margin-bottom: 0;}
+.nocomments {
+  margin-bottom: 0;
+}
 
-.comment-respond{
+.comment-respond {
   border-width: 4px 1px 1px;
   border-color: #b41a35 #dbdbdb #dbdbdb;
   border-style: solid;
@@ -60,48 +59,48 @@ div.comments{
   background: #fbfbfb;
 }
 
-.comment-form p{
+.comment-form p {
   *zoom: 1;
 }
 
-.comment-form p:after{
+.comment-form p:after {
   display: block;
   content: '';
   clear: both;
 }
 
-.comment-form label{
+.comment-form label {
   float: left;
   width: 180px;
   margin-right: 20px;
 }
 
-.required{
+.required {
   color: red;
   font-size: 11px;
 }
 
-.comment-reply-title{
+.comment-reply-title {
   margin-bottom: 15px;
 }
 
-.comment-form-url{
+.comment-form-url {
   display: none;
 }
 
-.txt{
+.txt {
   width: 450px;
 }
 
-.comment-form textarea{
+.comment-form textarea {
   width: 450px;
 }
 
-.form-submit{
+.form-submit {
   text-align: right;
 }
 
-.form-submit input[type="submit"]{
+.form-submit input[type="submit"] {
   background: #000;
   border: none;
   color: #fff;
@@ -110,6 +109,7 @@ div.comments{
   margin-right: 17px;
 }
 
-.logged-in-as{
+.logged-in-as {
   margin-bottom: 15px;
 }
+/* WP: comments -------------------------------------------------------------- */

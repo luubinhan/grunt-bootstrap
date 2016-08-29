@@ -1,19 +1,22 @@
-/* share-social-component
+/* CUSTOM: share-social-component
 -------------------------------------------------------------- */
 .share-social-component {
-  border-top: 1px solid #e2e2e2;
-  padding-top: 30px;
+	border-top: 1px solid #e2e2e2;
+	padding-top: 30px;
 }
+
 .ssc-label {
-  float: left;
-  padding: 7px 15px 0 0;
-  color: #726e6e;
+	float: left;
+	padding: 7px 15px 0 0;
+	color: #726e6e;
 }
+
 .ssc-buttons {
-  overflow: hidden;
+	overflow: hidden;
 }
+
 .s-link {
-  display: inline-block;
-  padding-right: 7px;
+	display: inline-block;
+	padding-right: 7px;
 }
-/* share-social-component -------------------------------------------------------------- */
+/* CUSTOM: share-social-component -------------------------------------------------------------- */

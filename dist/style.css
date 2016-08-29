@@ -366,8 +366,7 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 
 }
 .footer .container{
-  border-top: 1px solid #bfbfbf;
-  padding: 10px 0;
+  
 }
 .copyright{
   float: left;
@@ -382,24 +381,6 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 /* Sidebar
 -------------------------------------------------------------- */
 
-/* Single
--------------------------------------------------------------- */
-.single-post{
-
-}
-
-.post-content{
-
-}
-.paged{
-
-}
-.next-post{
-
-}
-.prev-post{
-  
-}
 
 /* Page
 -------------------------------------------------------------- */
@@ -489,3 +470,8 @@ body div.wpcf7-spam-blocked {
 }
 
 /* search.php -------------------------------------------- */
+
+.widget-title {
+  font-size: 14px;
+  font-weight: bold;
+}
