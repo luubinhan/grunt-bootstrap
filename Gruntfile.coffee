@@ -21,9 +21,12 @@ module.exports = (grunt) ->
             video: '<%= partialPath %>component/content-video.html'
             product: '<%= partialPath %>component/content-product.html'
             post: '<%= partialPath %>component/19-content-post.html'
+            product: '<%= partialPath %>component/26-content-product.html'
             image: '<%= partialPath %>component/content-image.html'
             gallery: '<%= partialPath %>component/content-gallery.html'
             job: '<%= partialPath %>component/content-job.html'
+            woo_breadcrumbs: '<%= partialPath %>component/29-woo-breadcrumbs.html'
+            related_products: '<%= partialPath %>component/32-woo-related-products.html'
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'

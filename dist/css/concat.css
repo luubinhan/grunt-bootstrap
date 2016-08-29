@@ -574,6 +574,56 @@ clear:both;
   top: 5%;
 }
 /* SECTION: LOGIN;-------------------------------------------- */
+/* ARCHIVE: PRODUCTS
+-------------------------------------------- */
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.products .product:nth-child(3n+1) {
+  margin-left: 0;
+}
+.amount {
+  font-size: 18px;  
+  padding-right: 10px;
+}
+.add_to_cart_button {
+  display: inline-block;
+  background: #2d2d2d;
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 7px;
+}
+a.add_to_cart_button:hover, 
+a.add_to_cart_button:focus {
+  text-decoration: none;
+  color: #fff;
+}
+.product > a:first-child {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 7px;
+  position: relative;
+}
+.product .onsale {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  background: #fff;
+  padding: 2px 7px 1px;
+  line-height: 1;
+}
+
+/* ARCHIVE: PRODUCTS -------------------------------------------- */
+
 /* SECTION CONTACT 
 --------------------------------------------------- */
 .box {
@@ -746,3 +796,107 @@ input.wpcf7-submit {
 .page-numbers.dots{
 	background: #fff;
 }
+/* woo-breadcrumbs
+-------------------------------------------------------------- */
+
+.breadcrumb{
+
+}
+
+.breadcrumb-trail{
+
+}
+
+.breadcrumb-trail a{
+
+}
+
+.breadcrumb-trail a:hover{
+
+}
+
+.trail-begin{
+  
+}
+
+.trail-end{
+
+}
+
+.sep{
+  padding: 0 7px;
+}
+
+/* COMMENT */
+
+.comments-area {
+  background: #f4f4f4;
+  padding: 22px 36px 5px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.comments-title,
+.comment-reply-title {
+  font-size: 26px;
+  color: #000;
+}
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+.comment-content {
+  padding-left: 40px;
+}
+.form-submit {
+  text-align: right;
+}
+.comment-form {
+  position: relative;
+}
+.comment-form-author,
+.comment-form-email {
+  padding-right: 500px;
+}
+.comment-form-comment {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 410px;
+}
+.comment-form-author input {
+  width: 100%;
+}
+.comment-form-email input {
+  width: 100%;
+}
+.comment-form-comment textarea {
+  width: 384px;
+  height: 107px;
+}
+/* SWIPER 
+------------------------------- */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/* SWIPER 	------------------- */
