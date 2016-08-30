@@ -1,4 +1,4 @@
-/* Recent post widget extend
+/* WIDGET: Recent post widget extend
 -------------------------------------------------------------- */
 
 .rpwe-block ul{
@@ -7,31 +7,38 @@
   padding: 0;
 }
 
-.rpwe-block li{
-  padding: 5px 10px;
-  border-top: 1px dashed #ccc;
-  padding-top: 10px;
+.rpwe-block li {  
+  margin-bottom: 10px;
+  min-height: 100px;
+  position: relative;
 }
-
+.rpwe-block li > a:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rpwe-block li > a:first-child img {
+  width: 100%;
+  height: auto !important;
+}
 .rpwe-block li:first-child{
   border-top: none;
 }
 
-.rpwe-block a{
+.rpwe-block a {
+  color: #111;
 }
 
-.rpwe-block h3{
-  margin-left: 60px;
-  font-size: 12px;
-  line-height: 19px;
+.rpwe-block h3 {
+  margin-left: 120px;
   padding: 0;
+  line-height: 19px;
   border-bottom: 0;
+  font-size: 14px;
 }
 
 .rpwe-thumb{
-  border: 1px solid #EEEEEE !important;
-  box-shadow: none !important;
-  padding: 1px !important;
+
 }
 
 .rpwe-summary{
@@ -39,16 +46,8 @@
 
 .rpwe-time{
   display: block;
-  margin-left: 60px;
-  font-size: 11px;
-  color: #666;
+  margin-left: 120px;
 }
-
-.rpwe-alignleft{
-  display: inline;
-  float: left;
-}
-
 .rpwe-alignright{
 }
 
@@ -69,4 +68,4 @@ clear:both;
 	zoom: 1;
 }
 
-/* Recent post widget extend -------------------------------------------- */
+/* WIDGET: Recent post widget extend -------------------------------------------- */

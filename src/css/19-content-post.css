@@ -2,7 +2,7 @@
 -------------------------------------------------------------- */
 .item-post {
   margin-bottom: 20px;
-  border-top: 1px solid #ddd;  
+  
   padding-top: 20px;
 }
 * .item-post:first-child {
@@ -14,8 +14,6 @@
   margin-bottom: .1em;
 }
 .post-date {
-  color: #666;
-  font-size: .9em;
   display: inline-block;
 }
 .post-category {
@@ -27,6 +25,7 @@
 .the-post-thumbnail {
   float: left;  
   margin-right: 20px;
+  text-align: center;
 }
 .the-post-thumbnail + .the-post-content {
   overflow: hidden;
@@ -43,5 +42,12 @@
         margin-bottom: 15px;
     }
 }
-
+#gridLayout .the-post-thumbnail {
+  float: none;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+#gridLayout .item-post {
+  padding-top: 0;
+}
 /* content-post.php -------------------------------------------- */

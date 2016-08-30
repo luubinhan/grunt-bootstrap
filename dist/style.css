@@ -327,11 +327,8 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 -------------------------------------------------------------- */
 
 .toolbar{
-  background: #f2f2f2;
-  border-bottom: 1px solid #bdbdbd;
-  font-size: 11px;
-  line-height: 20px;
-  padding: 2px 0;
+  background: #F8F8F8;
+  line-height: 20px;  
 }
 .top-nav{
   list-style: none;

@@ -67,3 +67,15 @@ section > container > zone > block
 - page-produce-detail.html
 - page-single.html: page.php
 
+# jQuery Plugins Included
+
+- matchHeight: https://github.com/liabru/jquery-match-height
+
+```js
+$(function() {
+    $('.match-height').matchHeight({
+        byRow: false,
+    });
+});
+```
+

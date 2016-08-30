@@ -9,7 +9,7 @@ module.exports = (grunt) ->
         files: ['src/**/*.html']
         tasks: ['htmlbuild:main','concat:css']
       css:
-        files: ['dist/*.css','src/css/*.css']
+        files: ['dist/*.css','src/css/*.css','dist/css/*.css']
       scripts:
         files: ['dist/*.js']        
     htmlbuild:
@@ -28,7 +28,7 @@ module.exports = (grunt) ->
             woo_breadcrumbs: '<%= partialPath %>component/29-woo-breadcrumbs.html'
             related_products: '<%= partialPath %>component/32-woo-related-products.html'
             pagenavi: '<%= partialPath %>component/05-wp-pagenavi.html'
-            
+            post_grid: '<%= partialPath %>component/33-content-post-grid.html'
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'
@@ -36,6 +36,11 @@ module.exports = (grunt) ->
             bwr_comments: '<%= partialPath %>widget/100-better-wordpress-recent-comments.html'
             recent_post: '<%= partialPath %>widget/111-wp-recent-post.html'
             pages: '<%= partialPath %>widget/110-wp-pages.html'
+            archieve: '<%= partialPath %>widget/106-wp-archieve.html'
+            categories: '<%= partialPath %>widget/107-wp-categories.html'
+            menu: '<%= partialPath %>widget/108-wp-menu.html'
+            meta: '<%= partialPath %>widget/109-wp-meta.html'
+            recent_post_extend: '<%= partialPath %>widget/102-recent-post-extended.html'
           layout:
             header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'
