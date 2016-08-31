@@ -8,15 +8,25 @@
 }
 
 .recent-comment{
-
+	margin-bottom: 15px;
+}
+.recent-comment:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.recent-comment-avatar {
+	display: block;
+	float: left;
+	margin-right: 10px;
 }
 
 .recent-comment-single{
-
+	overflow: hidden;
 }
 
 .recent-comment-author{
-
+	font-weight: bold;
 }
 
 .recent-comment-text{

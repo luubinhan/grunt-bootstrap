@@ -26,13 +26,13 @@ body {
 }
 
 a {
-  color: #06c;
+  color: #111;
   text-decoration: none;
   outline: none;
 }
 
 a:hover {
-  color: #09f;
+  color: #000;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -321,14 +321,17 @@ img.align-center{ margin: 0px auto;}
 table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
 
 
-/* MISC -------------------------------------------------------------- */
+/* MISC --------------------------------------------- */
 
-/* Header
+/* Layout: Header
 -------------------------------------------------------------- */
 
 .toolbar{
   background: #F8F8F8;
   line-height: 20px;  
+}
+.toolbar-inner {
+  padding: 5px 0;
 }
 .top-nav{
   list-style: none;
@@ -354,6 +357,7 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 .site-title{
   margin-bottom: 0;
 }
+/* Layout: Header --------------------------------------------- */
 
 /* Footer
 -------------------------------------------------------------- */
@@ -375,100 +379,28 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   text-align: right;
 }
 
-/* Sidebar
--------------------------------------------------------------- */
+/* Layout: Footer --------------------------------------------- */
 
-
-/* Page
--------------------------------------------------------------- */
-
-/* Search
--------------------------------------------------------------- */
-
-.page-search{
-
-}
-.search-post{
-  border-bottom: 1px solid #bdbdbd;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-/* Comment
--------------------------------------------------------------- */
-
-/* Archive
--------------------------------------------------------------- */
-
-/* 404
--------------------------------------------------------------- */
-
-.page-404{
-  padding: 90px 0;
-}
-
-/* Contact Form 7
--------------------------------------------------------------- */
-
-body div.wpcf7-response-output {
-  padding: 15px;
-  margin: 0 0 5px;
-  display: inline-block;
-}
-body div.wpcf7-validation-errors {  
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-  color: #8a6d3b;  
-}
-body div.wpcf7-mail-sent-ok {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
-}
-body div.wpcf7-mail-sent-ng {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
-}
-body div.wpcf7-spam-blocked {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
-}
-/* Contact Form 7 -------------------------------------------- */
-
-/* widget_blog
+/* Widget
 -------------------------------------------------------------- */
 
 .post-widget-caption {
   margin-bottom: 5px;
 }
-.post-date {
-  color: #666;
-  display: inline-block;
-}
 .post-category {
   display: inline-block;
-}
-.post-meta {
-  margin-bottom: 15px;
 }
 .widget-li {
   margin-bottom: 15px;
 }
-/* widget_blog -------------------------------------------- */
-
-/* search.php
--------------------------------------------------------------- */
-
-.search-title span {
-  display: block;
-  font-size: .7em;
-}
-
-/* search.php -------------------------------------------- */
-
 .widget-title {
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
+.page-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Widget -------------------------------------------- */

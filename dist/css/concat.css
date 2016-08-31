@@ -1,129 +1,239 @@
 /* WP: comments
 -------------------------------------------------------------- */
-div.comments {
-  background: #fbfbfb;
-  border: 1px solid #dbdbdb;
-  padding: 15px;
-  margin-bottom: 20px;
+
+.comments-area {
+
 }
 
-.comments .avatar {
+.comment-list + .comment-respond,
+.comment-navigation + .comment-respond {
+  padding-top: 1.75em;
+}
+
+.comments-title,
+.comment-reply-title {
+  border-top: 4px solid #1a1a1a;  
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-weight: 700;
+  line-height: 1.3125;
+  padding-top: 1.217391304em;
+}
+
+.comments-title {
+  margin-bottom: 1.217391304em;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0;
+}
+
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+  border-top: 1px solid #d1d1d1;
+  padding: 1.75em 0;
+}
+
+.comment-list .children {
+  list-style: none;
+  margin: 0;
+}
+
+.comment-list .children > li {
+  padding-left: 0.875em;
+}
+
+.comment-author {
+  color: #1a1a1a;
+  margin-bottom: 0.4375em;
+}
+
+.comment-author .avatar {
   float: left;
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
+  height: 28px;
+  margin-right: 0.875em;
+  position: relative;
+  width: 28px;
 }
 
-.comment-head {
-  color: #999;
-  font-size: 11px;
+.bypostauthor > article .fn:after {
+  content: "\f304";
+  left: 3px;
+  position: relative;
+  top: 5px;
 }
 
-.comment-head .name {
-  background: #B41A35;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  padding: 2px 7px;
-  color: #fff;
+.comment-metadata,
+.pingback .edit-link {
+  color: #686868;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
 }
 
-.reply {
-  text-align: right;
-  margin-top: 5px;
+.comment-metadata {
+  margin-bottom: 2.1538461538em;
 }
-
-.comment-entry {
+.comment-form-comment textarea {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+}
+.comment-form-author input,
+.comment-form-url input,
+.comment-form-email input {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  margin: 0;
+  padding: 4px 7px;
+  margin-bottom: 7px;
+}
+.comment-form .form-submit #submit {
+  border: 1px solid #e7e7e7;
   background: #fff;
-  padding: 15px;
-  margin-bottom: 10px;
+  padding: 7px 15px;
+}
+.comment-metadata a,
+.pingback .comment-edit-link {
+  color: #686868;
 }
 
-.comments .children {
-  padding-left: 40px;
+.comment-metadata a:hover,
+.comment-metadata a:focus,
+.pingback .comment-edit-link:hover,
+.pingback .comment-edit-link:focus {
+  color: #007acc;
 }
 
-.comments .children .comment-container {
-  border-left: 4px solid #fbfbfb;
+.comment-metadata .edit-link,
+.pingback .edit-link {
+  display: inline-block;
 }
 
-.nocomments {
+.comment-metadata .edit-link:before,
+.pingback .edit-link:before {
+  content: "\002f";
+  display: inline-block;
+  opacity: 0.7;
+  padding: 0 0.538461538em;
+}
+
+.comment-content ul,
+.comment-content ol {
+  margin: 0 0 1.5em 1.25em;
+}
+
+.comment-content li > ul,
+.comment-content li > ol {
   margin-bottom: 0;
 }
 
-.comment-respond {
-  border-width: 4px 1px 1px;
-  border-color: #b41a35 #dbdbdb #dbdbdb;
-  border-style: solid;
-  padding: 15px 15px;
-  background: #fbfbfb;
+.comment-reply-link {
+  border: 1px solid #d1d1d1;
+  display: inline-block;
+  line-height: 1;
+  margin-top: 2.1538461538em;
+  padding: 0.5384615385em 0.5384615385em 0.4615384615em;
 }
 
-.comment-form p {
-  *zoom: 1;
+.comment-reply-link:hover,
+.comment-reply-link:focus {
+  color: #007acc;
+  outline: 0;
 }
 
-.comment-form p:after {
-  display: block;
-  content: '';
-  clear: both;
+.comment-form {
+  padding-top: 1.75em;
+  margin-bottom: 1.75em;
 }
 
 .comment-form label {
-  float: left;
-  width: 180px;
-  margin-right: 20px;
+  color: #686868;
+  display: block;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.076923077em;
+  line-height: 1.6153846154;
+  margin-bottom: 0.5384615385em;
+  text-transform: uppercase;
 }
 
-.required {
-  color: red;
-  font-size: 11px;
+.comment-list .comment-form {
+  padding-bottom: 1.75em;
 }
 
-.comment-reply-title {
-  margin-bottom: 15px;
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.form-allowed-tags {
+  color: #686868;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+  margin-bottom: 2.1538461538em;
 }
 
-.comment-form-url {
-  display: none;
+.no-comments {
+  border-top: 1px solid #d1d1d1;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 1.75em;
 }
 
-.txt {
-  width: 450px;
+.comment-navigation + .no-comments {
+  border-top: 0;
+  padding-top: 0;
 }
 
-.comment-form textarea {
-  width: 450px;
+.form-allowed-tags code {
+  font-family: Inconsolata, monospace;
 }
 
 .form-submit {
-  text-align: right;
+  margin-bottom: 0;
 }
 
-.form-submit input[type="submit"] {
-  background: #000;
-  border: none;
-  color: #fff;
-  border-right: 2px solid #b41a35;
-  padding: 5px 20px;
-  margin-right: 17px;
+.required {
+  color: #007acc;
+  font-family: Merriweather, Georgia, serif;
 }
 
-.logged-in-as {
-  margin-bottom: 15px;
+.comment-reply-title small {
+  font-size: 100%;
+}
+
+.comment-reply-title small a {
+  border: 0;
+  float: right;
+  height: 32px;
+  overflow: hidden;
+  width: 26px;
+}
+
+.comment-reply-title small a:hover,
+.comment-reply-title small a:focus {
+  color: #1a1a1a;
+}
+
+.comment-reply-title small a:before {
+  content: "\f405";
+  font-size: 32px;
+  position: relative;
+  top: -5px;
 }
 /* WP: comments -------------------------------------------------------------- */
-/* CUSTOM: share-social-component
+/* COMPONENT: share-social-component
 -------------------------------------------------------------- */
 .share-social-component {
 	border-top: 1px solid #e2e2e2;
-	padding-top: 30px;
+	padding-top: 10px;
+	margin-bottom: 10px;
 }
 
 .ssc-label {
 	float: left;
-	padding: 7px 15px 0 0;
-	color: #726e6e;
+	padding: 5px 15px 0 7px;
 }
 
 .ssc-buttons {
@@ -132,9 +242,28 @@ div.comments {
 
 .s-link {
 	display: inline-block;
-	padding-right: 7px;
+	padding: 4px 10px;
+	color: #fff;
 }
-/* CUSTOM: share-social-component -------------------------------------------------------------- */
+
+.s-link:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.s-facebook {
+	background: #4867AA;
+}
+
+.s-email {
+	background: #DC4638;
+}
+
+.s-twitter {
+	background: #36B9FF;
+}
+
+/* COMPONENT: share-social-component -------------------------------------------------------------- */
 /* WP: pager
 -------------------------------------------------------------- */
 .wp-pagenavi {
@@ -247,15 +376,25 @@ div.comments {
 }
 
 .recent-comment{
-
+	margin-bottom: 15px;
+}
+.recent-comment:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.recent-comment-avatar {
+	display: block;
+	float: left;
+	margin-right: 10px;
 }
 
 .recent-comment-single{
-
+	overflow: hidden;
 }
 
 .recent-comment-author{
-
+	font-weight: bold;
 }
 
 .recent-comment-text{
@@ -774,6 +913,31 @@ input.wpcf7-submit {
   margin-top: 15px;
 }
 
+body div.wpcf7-response-output {
+  padding: 15px;
+  margin: 0 0 5px;
+  display: inline-block;
+}
+body div.wpcf7-validation-errors {  
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;  
+}
+body div.wpcf7-mail-sent-ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+body div.wpcf7-mail-sent-ng {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+body div.wpcf7-spam-blocked {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
 /* Contact Form 7 -------------------------------------------- */
 /* content-post.php
 -------------------------------------------------------------- */
@@ -895,53 +1059,33 @@ input.wpcf7-submit {
   padding: 0 7px;
 }
 
-/* COMMENT */
-
+/* Woo: comments
+-------------------------------------------------------------- */
 .comments-area {
-  background: #f4f4f4;
-  padding: 22px 36px 5px;
-  margin-top: 50px;
-  margin-bottom: 90px;
 }
 .comments-title,
 .comment-reply-title {
-  font-size: 26px;
-  color: #000;
 }
 .comment-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px;
 }
 .comment-content {
-  padding-left: 40px;
 }
 .form-submit {
-  text-align: right;
 }
 .comment-form {
-  position: relative;
 }
 .comment-form-author,
 .comment-form-email {
-  padding-right: 500px;
 }
 .comment-form-comment {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 410px;
 }
 .comment-form-author input {
-  width: 100%;
 }
 .comment-form-email input {
-  width: 100%;
 }
-.comment-form-comment textarea {
-  width: 384px;
-  height: 107px;
+.comment-form-comment textarea { 
 }
+/* Woo: comments -------------------------------------------------------------- */
 /* SWIPER 
 ------------------------------- */
 .swiper-container {

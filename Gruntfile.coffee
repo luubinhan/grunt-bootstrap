@@ -29,6 +29,9 @@ module.exports = (grunt) ->
             related_products: '<%= partialPath %>component/32-woo-related-products.html'
             pagenavi: '<%= partialPath %>component/05-wp-pagenavi.html'
             post_grid: '<%= partialPath %>component/33-content-post-grid.html'
+            wp_pager: '<%= partialPath %>component/34-wp-pager.html'
+            share: '<%= partialPath %>component/04-share-social.html'
+            wp_comment: '<%= partialPath %>component/01-comment.html'
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'

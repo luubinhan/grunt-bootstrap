@@ -79,3 +79,6 @@ $(function() {
 });
 ```
 
+# Icon Fonts
+
+http://ionicons.com/
