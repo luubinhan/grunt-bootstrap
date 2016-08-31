@@ -1,21 +1,14 @@
 /* SECTION CONTACT 
 --------------------------------------------------- */
-.box {
-  -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
-  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
-  border-radius: 3px;
-  padding: 30px;
-  background: #fff;
-}
 .contact-form {
-  background: #f4f5f9;
-  padding: 140px 0;
+  
 }
-h1, .h1, h2, .h2, h3, .h3 {
-  color: #2e6da4;
+#map {
+  height: 600px;
+} 
+.section-map {
+  margin-bottom: 15px;
 }
-
-/* SECTION CONTACT ----------------------------- */
 
 /* Contact Form 7
 -------------------------------------------------------------- */

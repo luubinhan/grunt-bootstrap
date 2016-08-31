@@ -22,12 +22,20 @@
 	<!-- MANUAL UPDATE -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style-responsive.css">
-
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+	<!-- Init MAPS -->
+	<script>
+	    var map;
+	    function initMap() {
+	      map = new google.maps.Map(document.getElementById('map'));
+	    }
+	</script>
+	
 	<script src="js/plugin.js"></script>
 	<script src="js/main.js"></script>
-	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
 </head>
 <body>
 <!-- TOOLBAR -->
@@ -42,8 +50,8 @@
 						<li><a href="">Ngôi sao</a></li>
 						<li><a href="">iOne</a></li>
 						<li><a href="">Game thủ</a></li>
-						<li><a href="">Sendo</a></li>
-						<li><a href="">Việc làm</a></li>
+						<li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+						<li><a href="17-contact-form-7.html">Contact Form 7</a></li>
 						<li><a href="7-woo-login.html">Woo - Login</a></li>
 					</ul>
 				</div>

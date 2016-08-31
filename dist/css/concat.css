@@ -133,8 +133,10 @@
   border: 1px solid #d1d1d1;
   display: inline-block;
   line-height: 1;
+  border-radius: 15px;  
   margin-top: 2.1538461538em;
-  padding: 0.5384615385em 0.5384615385em 0.4615384615em;
+  padding: 3px 15px;
+  font-size: 11px;
 }
 
 .comment-reply-link:hover,
@@ -244,6 +246,7 @@
 	display: inline-block;
 	padding: 4px 10px;
 	color: #fff;
+	border-radius: 15px;
 }
 
 .s-link:hover {
@@ -746,7 +749,7 @@ clear:both;
   margin: 0;
   padding: 0;
 }
-.product {
+li.product {
   float: left;
   width: 30%;
   margin-left: 5%;
@@ -814,22 +817,15 @@ a.add_to_cart_button:focus {
 /* SECTION COLUMNS -------------------------------------------------------------- */
 /* SECTION CONTACT 
 --------------------------------------------------- */
-.box {
-  -webkit-box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
-  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.03);
-  border-radius: 3px;
-  padding: 30px;
-  background: #fff;
-}
 .contact-form {
-  background: #f4f5f9;
-  padding: 140px 0;
+  
 }
-h1, .h1, h2, .h2, h3, .h3 {
-  color: #2e6da4;
+#map {
+  height: 600px;
+} 
+.section-map {
+  margin-bottom: 15px;
 }
-
-/* SECTION CONTACT ----------------------------- */
 
 /* Contact Form 7
 -------------------------------------------------------------- */

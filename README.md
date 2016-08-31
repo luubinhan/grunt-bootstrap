@@ -79,6 +79,8 @@ $(function() {
 });
 ```
 
+- http://idangero.us/swiper
+
 # Icon Fonts
 
 http://ionicons.com/

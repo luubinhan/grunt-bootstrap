@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
 }
-.product {
+li.product {
   float: left;
   width: 30%;
   margin-left: 5%;

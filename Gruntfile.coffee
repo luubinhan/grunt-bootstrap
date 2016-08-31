@@ -32,6 +32,9 @@ module.exports = (grunt) ->
             wp_pager: '<%= partialPath %>component/34-wp-pager.html'
             share: '<%= partialPath %>component/04-share-social.html'
             wp_comment: '<%= partialPath %>component/01-comment.html'
+            contact_form: '<%= partialPath %>component/18-contact-form-7.html'            
+            slider_swiper: '<%= partialPath %>component/31-slider-swiper.html'            
+            subscribe: '<%= partialPath %>component/07-subscribe-form.html'            
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'
