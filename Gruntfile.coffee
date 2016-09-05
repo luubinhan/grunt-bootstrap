@@ -35,6 +35,8 @@ module.exports = (grunt) ->
             contact_form: '<%= partialPath %>component/18-contact-form-7.html'            
             slider_swiper: '<%= partialPath %>component/31-slider-swiper.html'            
             subscribe: '<%= partialPath %>component/07-subscribe-form.html'            
+            meta: '<%= partialPath %>component/35-post-meta.html'            
+                        
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'
@@ -47,6 +49,8 @@ module.exports = (grunt) ->
             menu: '<%= partialPath %>widget/108-wp-menu.html'
             meta: '<%= partialPath %>widget/109-wp-meta.html'
             recent_post_extend: '<%= partialPath %>widget/102-recent-post-extended.html'
+            mystyle_contact: '<%= partialPath %>widget/36-mystyle-contact.html'
+            mystyle_social: '<%= partialPath %>widget/115-mystyle-social.html'
           layout:
             header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'

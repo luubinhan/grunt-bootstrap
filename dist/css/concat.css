@@ -937,9 +937,8 @@ body div.wpcf7-spam-blocked {
 /* Contact Form 7 -------------------------------------------- */
 /* content-post.php
 -------------------------------------------------------------- */
-.item-post {
-  margin-bottom: 20px;
-  
+.item-post.col-md-12 {
+  margin-bottom: 20px;  
   padding-top: 20px;
 }
 * .item-post:first-child {
