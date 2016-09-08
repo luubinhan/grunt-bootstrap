@@ -35,6 +35,15 @@
         }
     </script>
 
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
@@ -49,11 +58,11 @@
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
-                                <li><a href="">Vnexpress</a></li>
-                                <li><a href="">Ngôi sao</a></li>
-                                <li><a href="">iOne</a></li>
-                                <li><a href="">Game thủ</a></li>
-                                <li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li><a href="1-single.html">Single Post</a></li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
                                 <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
                                 <li><a href="7-woo-login.html">Woo - Login</a></li>
                             </ul>
@@ -78,9 +87,7 @@
     <div id="header">
         <header class="header">
             <div class="header-inner">
-
-
-                <nav class="navbar navbar-default main-nav-wrap">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -149,58 +156,57 @@
 
     <main id="master" class="master">
         <div class="master-inner">
-            <div class="container">
-                <!-- CONTACT -->
-                <div class="contact-form">
-                    <section class="section section-map">
-                        <div class="row">
-                            <div id="map"></div>
-                            <div id="marker" data-image="images/map-marker.png"></div>
-                            <div class="location-link" data-latitude="10.734663" data-longitude="106.664908" data-address="Chung cu bong sao ta quang buu"></div>
-                        </div>
-                    </section>
+
+            <!-- CONTACT -->
+            <div class="contact-form">
+                <section class="section section-map">
                     <div class="row">
-                        <div class="col-md-5">
-                            <div class="box match-height">
-                                <h3>Our Address</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perferendis unde alias harum, expedita tempora </p>
-                                <h3>
+                        <div id="map"></div>
+                        <div id="marker" data-image="images/map-marker.png"></div>
+                        <div class="location-link" data-latitude="10.734663" data-longitude="106.664908" data-address="Chung cu bong sao ta quang buu"></div>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="box match-height">
+                            <h3>Our Address</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perferendis unde alias harum, expedita tempora </p>
+                            <h3>
             Call Us
           </h3>
-                                <p><a href="tel:123456789">Deserunt officiis suscipit ipsam temporibus reiciendis, hic ipsa amet.</a></p>
-                                <h3>
+                            <p><a href="tel:123456789">Deserunt officiis suscipit ipsam temporibus reiciendis, hic ipsa amet.</a></p>
+                            <h3>
             Email Us
           </h3>
-                                <p>
-                                    <a href="">contactus@gmail.com</a>
-                                </p>
-                                <h3>
+                            <p>
+                                <a href="">contactus@gmail.com</a>
+                            </p>
+                            <h3>
             Fax
           </h3>
-                                <p>
-                                    0123456789
-                                </p>
-                            </div>
-                            <!-- box -->
+                            <p>
+                                0123456789
+                            </p>
                         </div>
-                        <div class="col-md-7">
-                            <div class="box match-height">
-                                <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputEmail1" placeholder="Name"></div>
-                                <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputPassword1" placeholder="Email"></div>
-                                <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputPassword1" placeholder="Subjcet"></div>
-                                <div class="form-group"><textarea name="" id="" class="wpcf7-form-control wpcf7-textarea text-area" placeholder="Message"></textarea></div>
-                                <input type="submit" value="Send Message" class="wpcf7-submit">
-                            </div>
-                            <!-- box -->
-                        </div>
-                        <!-- col -->
+                        <!-- box -->
                     </div>
-                    <!-- row -->
+                    <div class="col-md-7">
+                        <div class="box match-height">
+                            <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputEmail1" placeholder="Name"></div>
+                            <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputPassword1" placeholder="Email"></div>
+                            <div class="form-group"><input type="text" class="wpcf7-form-control" id="exampleInputPassword1" placeholder="Subjcet"></div>
+                            <div class="form-group"><textarea name="" id="" class="wpcf7-form-control wpcf7-textarea text-area" placeholder="Message"></textarea></div>
+                            <input type="submit" value="Send Message" class="wpcf7-submit">
+                        </div>
+                        <!-- box -->
+                    </div>
+                    <!-- col -->
                 </div>
-                <!-- contact-form -->
-                <!-- END CONTACT -->
+                <!-- row -->
             </div>
-            <!-- container -->
+            <!-- contact-form -->
+            <!-- END CONTACT -->
+
         </div>
         <!-- master-inner -->
     </main>

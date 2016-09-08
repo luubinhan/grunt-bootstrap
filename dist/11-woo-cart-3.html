@@ -35,6 +35,15 @@
         }
     </script>
 
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
@@ -49,11 +58,11 @@
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
-                                <li><a href="">Vnexpress</a></li>
-                                <li><a href="">Ngôi sao</a></li>
-                                <li><a href="">iOne</a></li>
-                                <li><a href="">Game thủ</a></li>
-                                <li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li><a href="1-single.html">Single Post</a></li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
                                 <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
                                 <li><a href="7-woo-login.html">Woo - Login</a></li>
                             </ul>
@@ -78,9 +87,7 @@
     <div id="header">
         <header class="header">
             <div class="header-inner">
-
-
-                <nav class="navbar navbar-default main-nav-wrap">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -147,121 +154,118 @@
     </div>
     <!-- / HEADER -->
 
-
-
     <main id="master" class="master">
         <div class="master-inner">
-            <div class="container">
-                <div class="woocommerce">
-                    <p>Thank you. Your order has been received.</p>
-                    <ul class="order_details">
-                        <li class="order">
-                            Order:
-                            <strong>#2984</strong>
-                        </li>
-                        <li class="date">
-                            Date:
-                            <strong>November 5, 2014</strong>
-                        </li>
-                        <li class="total">
-                            Total:
-                            <strong>
+
+            <div class="woocommerce">
+                <p>Thank you. Your order has been received.</p>
+                <ul class="order_details">
+                    <li class="order">
+                        Order:
+                        <strong>#2984</strong>
+                    </li>
+                    <li class="date">
+                        Date:
+                        <strong>November 5, 2014</strong>
+                    </li>
+                    <li class="total">
+                        Total:
+                        <strong>
                 <span class="amount">$119.00</span>
             </strong>
-                        </li>
-                        <li class="method">
-                            Payment method:
-                            <strong>Direct Bank Transfer</strong>
-                        </li>
-                    </ul>
-                    <div class="clear"></div>
-                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                    <h2>Our Bank Details</h2>
-                    <ul class="order_details bacs_details">
-                    </ul>
-                    <h2>Order Details</h2>
-                    <table class="shop_table order_details">
-                        <thead>
-                            <tr>
-                                <th class="product-name">Product</th>
-                                <th class="product-total">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="order_item">
-                                <td class="product-name">
-                                    <a href="http://demo2.woothemes.com/fashionable/product/baby-blue-shoes/">Baby Blue Shoes</a>
-                                    <strong class="product-quantity">× 1</strong>
-                                </td>
-                                <td class="product-total">
-                                    <span class="amount">$119.00</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th scope="row">Cart Subtotal:</th>
-                                <td>
-                                    <span class="amount">$119.00</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Shipping:</th>
-                                <td>Free Shipping</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Payment Method:</th>
-                                <td>Direct Bank Transfer</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Order Total:</th>
-                                <td>
-                                    <span class="amount">$119.00</span>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <header>
-                        <h2>Customer details</h2>
-                    </header>
-                    <dl class="customer_details">
-                        <dt>Email:</dt>
-                        <dd>an.luu@vn.devinition.com</dd>
-                        <dt>Telephone:</dt>
-                        <dd>09438713213</dd>
-                    </dl>
-                    <div class="col2-set addresses">
-                        <div class="col-1">
-                            <header class="title">
-                                <h3>Billing Address</h3>
-                            </header>
-                            <address>
+                    </li>
+                    <li class="method">
+                        Payment method:
+                        <strong>Direct Bank Transfer</strong>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                <h2>Our Bank Details</h2>
+                <ul class="order_details bacs_details">
+                </ul>
+                <h2>Order Details</h2>
+                <table class="shop_table order_details">
+                    <thead>
+                        <tr>
+                            <th class="product-name">Product</th>
+                            <th class="product-total">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="order_item">
+                            <td class="product-name">
+                                <a href="http://demo2.woothemes.com/fashionable/product/baby-blue-shoes/">Baby Blue Shoes</a>
+                                <strong class="product-quantity">× 1</strong>
+                            </td>
+                            <td class="product-total">
+                                <span class="amount">$119.00</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Cart Subtotal:</th>
+                            <td>
+                                <span class="amount">$119.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shipping:</th>
+                            <td>Free Shipping</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Payment Method:</th>
+                            <td>Direct Bank Transfer</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Order Total:</th>
+                            <td>
+                                <span class="amount">$119.00</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <header>
+                    <h2>Customer details</h2>
+                </header>
+                <dl class="customer_details">
+                    <dt>Email:</dt>
+                    <dd>an.luu@vn.devinition.com</dd>
+                    <dt>Telephone:</dt>
+                    <dd>09438713213</dd>
+                </dl>
+                <div class="col2-set addresses">
+                    <div class="col-1">
+                        <header class="title">
+                            <h3>Billing Address</h3>
+                        </header>
+                        <address>
                 Test Test
                 <br>An
                 <br>122 Street
                 <br>Ha Noi
                 <br>Vietnam</address>
-                        </div>
-                        <!-- /.col-1 -->
-                        <div class="col-2">
-                            <header class="title">
-                                <h3>Shipping Address</h3>
-                            </header>
-                            <address>
-                Test Test
-                <br>An
-                <br>122 Street
-                <br>Ha Noi
-                <br>Vietnam</address>
-                        </div>
-                        <!-- /.col-2 -->
                     </div>
-                    <!-- /.col2-set -->
-                    <div class="clear"></div>
+                    <!-- /.col-1 -->
+                    <div class="col-2">
+                        <header class="title">
+                            <h3>Shipping Address</h3>
+                        </header>
+                        <address>
+                Test Test
+                <br>An
+                <br>122 Street
+                <br>Ha Noi
+                <br>Vietnam</address>
+                    </div>
+                    <!-- /.col-2 -->
                 </div>
-
+                <!-- /.col2-set -->
+                <div class="clear"></div>
             </div>
-            <!-- container -->
+
+
         </div>
         <!-- master-inner -->
     </main>

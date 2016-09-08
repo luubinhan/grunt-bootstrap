@@ -243,39 +243,33 @@ img::-moz-selection {
 .clearfix:before,.cf:before,.clearfix:after,.cf:after,.container:before,.container:after{content:"\0020";display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 .clearfix:after,.cf:after,.container:after{clear:both}
 .clearfix,.cf,.container{*zoom:1}
-.prefix1{padding-left: 5px !important;	}
-.prefix2{padding-left: 10px !important;}
-.prefix3{padding-left: 15px !important;}
-.prefix4{padding-left: 20px !important;}
-.prefix5{padding-left: 25px !important;}
-.prefix6{padding-left: 30px !important;}
-.suffix1{padding-right: 5px !important;}
-.suffix2{padding-right: 10px !important;}
-.suffix3{padding-right: 15px !important;}
-.suffix4{padding-right: 20px !important;}
-.suffix5{padding-right: 25px !important;}
-.suffix6{padding-right: 30px !important;}
-.wrap01{padding: 5px 0;}
-.wrap02{padding: 10px 0;}
-.wrap03{padding: 15px 0;}
-.wrap04{padding: 20px 0;}
-.wrap05{padding: 25px 0;}
-.wrap06{padding: 30px 0;}
-.wrap1{padding: 5px;}
-.wrap2{padding: 10px;}
-.wrap3{padding: 15px;}
-.wrap4{padding: 20px;}
-.wrap5{padding: 25px;}
-.wrap6{padding: 30px;}
-.wrap0{padding: 0;}
-.mb1{margin-bottom: 5px;}
-.mb2{margin-bottom: 10px;}
-.mb3{margin-bottom: 15px;}
-.mb4{margin-bottom: 20px;}
-.mt1{margin-top: 5px}
-.mt2{margin-top: 10px}
-.mt3{margin-top: 15px}
-.mt4{margin-top: 20px}
+.pl-10{padding-left: 10px !important;	}
+.pl-20{padding-left: 20px !important;}
+.pl-30{padding-left: 30px !important;}
+.pl-40{padding-left: 40px !important;}
+.pr-10{padding-right: 10px !important;}
+.pr-20{padding-right: 20px !important;}
+.pr-30{padding-right: 30px !important;}
+.pr-40{padding-right: 40px !important;}
+.pt-10{padding-top: 10px !important;}
+.pt-20{padding-top: 20px !important;}
+.pt-30{padding-top: 30px !important;}
+.pt-40{padding-top: 40px !important;}
+.p-10{padding: 10px;}
+.p-20{padding: 20px;}
+.p-30{padding: 30px;}
+.p-40{padding: 40px;}
+.p-50{padding: 50px;}
+.p-60{padding: 60px;}
+.p-0{padding: 0;}
+.mb-10{margin-bottom: 10px;}
+.mb-20{margin-bottom: 20px;}
+.mb-30{margin-bottom: 30px;}
+.mb-40{margin-bottom: 40px;}
+.mt-10{margin-top: 10px}
+.mt-20{margin-top: 20px}
+.mt-30{margin-top: 30px}
+.mt-40{margin-top: 40px}
 .left,.pull-left{float: left !important;}
 .right,.pull-right{float: right !important;}
 .banner img, figure img{display: block;}
@@ -322,7 +316,8 @@ img.align-center{ margin: 0px auto;}
 .align-left{text-align: left !important;}
 .align-right{text-align: right!important;}
 .align-center{text-align: center !important;}
-table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
+table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
+.big-icon {font-size: 40px; display: inline;}
 
 
 /* MISC --------------------------------------------- */
@@ -353,12 +348,15 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   padding: 0px 10px;
 }
 .header{
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .row-header{
   padding: 20px 0;
 }
 .site-title{
+  margin-bottom: 0;
+}
+.navbar.navbar-static-top {
   margin-bottom: 0;
 }
 /* Layout: Header --------------------------------------------- */
@@ -406,5 +404,9 @@ table.style1 tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.page-hero {
+  margin-bottom: 20px;
+  padding: 30px 0;
 }
 /* Widget -------------------------------------------- */

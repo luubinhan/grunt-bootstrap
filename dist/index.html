@@ -35,6 +35,15 @@
         }
     </script>
 
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
@@ -49,11 +58,11 @@
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
-                                <li><a href="">Vnexpress</a></li>
-                                <li><a href="">Ngôi sao</a></li>
-                                <li><a href="">iOne</a></li>
-                                <li><a href="">Game thủ</a></li>
-                                <li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li><a href="1-single.html">Single Post</a></li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
                                 <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
                                 <li><a href="7-woo-login.html">Woo - Login</a></li>
                             </ul>
@@ -78,9 +87,7 @@
     <div id="header">
         <header class="header">
             <div class="header-inner">
-
-
-                <nav class="navbar navbar-default main-nav-wrap">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -149,39 +156,83 @@
 
     <main id="master" class="master">
         <div class="master-inner">
-            <div class="container">
 
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+            <!-- Home Section -->
+            <section class="home-section bg-dark-alfa-90 parallax-4" data-background="images/section-bg-14.jpg" id="home">
+                <div class="js-height-full">
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+                    <!-- Home Page Content -->
+                    <div class="home-content container">
+                        <div class="home-text">
+                            <div class="container hs-cont">
+                                <!-- Headings -->
+                                <div class="hs-wrap-1">
 
-                <!-- SWIPER -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
-                        <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                                    <div class="hs-line-4 mb-20 animate-init" data-anim-type="fade-in-down-big" data-anim-delay="400">
+                                        Creative Agency With Magic Skills
+                                    </div>
+
+                                    <div class="hs-line-5 animate-init" data-anim-type="flip-in-top-front" data-anim-delay="800">
+                                        Stream
+                                    </div>
+
+                                    <div class="local-scroll animate-init" data-anim-type="fade-in-up-large" data-anim-delay="1600">
+
+                                        <a href="#about" class="btn btn-primary btn-small">See More</a> &nbsp;
+                                        <a href="" class="btn btn-default btn-small" target="_blank">Buy Now</a>
+
+                                    </div>
+
+                                </div>
+                                <!-- End Headings -->
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <!-- End Home Page Content -->
+
+                    <!-- Scroll Down -->
+                    <div class="local-scroll">
+                        <a href="#footer" class="scroll-down"><i class="scroll-down-icon"></i><span>Scroll Down</span></a>
+                    </div>
+                    <!-- End Scroll Down -->
+
                 </div>
-                <!-- END SWIPER -->
-                <script>
-                    if ($('.swiper-container').length) {
-                        var swiper = new Swiper('.swiper-container', {
-                            paginationClickable: true,
-                            nextButton: '.swiper-button-next',
-                            prevButton: '.swiper-button-prev',
-                            spaceBetween: 30
-                        });
-                    }
-                </script>
+            </section>
+            <!-- End Home Section -->
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.js"></script>
+
+            <!-- SWIPER -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                    <div class="swiper-slide"><img src="http://placehold.it/200x150" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- END SWIPER -->
+            <script>
+                if ($('.swiper-container').length) {
+                    var swiper = new Swiper('.swiper-container', {
+                        paginationClickable: true,
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        spaceBetween: 30
+                    });
+                }
+            </script>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-9">
                         <section class="row row-posts">
@@ -493,7 +544,7 @@
                 </div>
                 <!-- row -->
             </div>
-            <!-- container -->
+
         </div>
         <!-- master-inner -->
     </main>

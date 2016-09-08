@@ -35,6 +35,15 @@
         }
     </script>
 
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
@@ -49,11 +58,11 @@
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
-                                <li><a href="">Vnexpress</a></li>
-                                <li><a href="">Ngôi sao</a></li>
-                                <li><a href="">iOne</a></li>
-                                <li><a href="">Game thủ</a></li>
-                                <li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li><a href="1-single.html">Single Post</a></li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
                                 <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
                                 <li><a href="7-woo-login.html">Woo - Login</a></li>
                             </ul>
@@ -78,9 +87,7 @@
     <div id="header">
         <header class="header">
             <div class="header-inner">
-
-
-                <nav class="navbar navbar-default main-nav-wrap">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -147,100 +154,97 @@
     </div>
     <!-- / HEADER -->
 
-
-
     <main id="master" class="master">
         <div class="master-inner">
-            <div class="container">
-                <div class="woocommerce">
 
-                    <form method="post" action="">
+            <div class="woocommerce">
 
-                        <h3>Billing Address</h3>
+                <form method="post" action="">
 
-                        <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required">
-                            <label class="">
+                    <h3>Billing Address</h3>
+
+                    <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required">
+                        <label class="">
 				Country
 			</label>
-                            <strong>Vietnam</strong>
-                            <input type="hidden" value="VN" id="billing_country" name="billing_country">
-                        </p>
+                        <strong>Vietnam</strong>
+                        <input type="hidden" value="VN" id="billing_country" name="billing_country">
+                    </p>
 
-                        <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                            <label class="" for="billing_first_name">
+                    <p id="billing_first_name_field" class="form-row form-row-first validate-required">
+                        <label class="" for="billing_first_name">
 				First Name 
 				<abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" value="" placeholder="" id="billing_first_name" name="billing_first_name" class="input-text">
+                        <input type="text" value="" placeholder="" id="billing_first_name" name="billing_first_name" class="input-text">
 
-                        </p>
+                    </p>
 
-                        <p id="billing_last_name_field" class="form-row form-row-last validate-required">
-                            <label class="" for="billing_last_name">
+                    <p id="billing_last_name_field" class="form-row form-row-last validate-required">
+                        <label class="" for="billing_last_name">
 				Last Name 
 				<abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" value="" placeholder="" id="billing_last_name" name="billing_last_name" class="input-text">
-                        </p>
-                        <div class="clear"></div>
+                        <input type="text" value="" placeholder="" id="billing_last_name" name="billing_last_name" class="input-text">
+                    </p>
+                    <div class="clear"></div>
 
-                        <p id="billing_company_field" class="form-row form-row-wide">
-                            <label class="" for="billing_company">Company Name</label>
-                            <input type="text" value="" placeholder="" id="billing_company" name="billing_company" class="input-text">
-                        </p>
+                    <p id="billing_company_field" class="form-row form-row-wide">
+                        <label class="" for="billing_company">Company Name</label>
+                        <input type="text" value="" placeholder="" id="billing_company" name="billing_company" class="input-text">
+                    </p>
 
-                        <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
-                            <label class="" for="billing_address_1">Address <abbr title="required" class="required">*</abbr>
+                    <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
+                        <label class="" for="billing_address_1">Address <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" autocomplete="no" value="" placeholder="Street address" id="billing_address_1" name="billing_address_1" class="input-text">
-                        </p>
+                        <input type="text" autocomplete="no" value="" placeholder="Street address" id="billing_address_1" name="billing_address_1" class="input-text">
+                    </p>
 
-                        <p id="billing_address_2_field" class="form-row form-row-wide address-field">
-                            <input type="text" autocomplete="no" value="" placeholder="Apartment, suite, unit etc. (optional)" id="billing_address_2" name="billing_address_2" class="input-text">
-                        </p>
+                    <p id="billing_address_2_field" class="form-row form-row-wide address-field">
+                        <input type="text" autocomplete="no" value="" placeholder="Apartment, suite, unit etc. (optional)" id="billing_address_2" name="billing_address_2" class="input-text">
+                    </p>
 
-                        <p id="billing_city_field" class="form-row form-row-wide address-field validate-required">
-                            <label class="" for="billing_city">Town / City <abbr title="required" class="required">*</abbr>
+                    <p id="billing_city_field" class="form-row form-row-wide address-field validate-required">
+                        <label class="" for="billing_city">Town / City <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" autocomplete="no" value="" placeholder="Town / City" id="billing_city" name="billing_city" class="input-text">
-                        </p>
+                        <input type="text" autocomplete="no" value="" placeholder="Town / City" id="billing_city" name="billing_city" class="input-text">
+                    </p>
 
-                        <p style="display: none" id="billing_state_field" class="form-row form-row-first address-field validate-required">
-                            <label class="" for="billing_state">State / County <abbr title="required" class="required">*</abbr>
+                    <p style="display: none" id="billing_state_field" class="form-row form-row-first address-field validate-required">
+                        <label class="" for="billing_state">State / County <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="hidden" placeholder="State / County" autocomplete="no" value="" id="billing_state" name="billing_state" class="hidden">
-                        </p>
-                        <p id="billing_postcode_field" class="form-row form-row-last address-field validate-required">
-                            <label class="" for="billing_postcode">Postcode / Zip <abbr title="required" class="required">*</abbr>
+                        <input type="hidden" placeholder="State / County" autocomplete="no" value="" id="billing_state" name="billing_state" class="hidden">
+                    </p>
+                    <p id="billing_postcode_field" class="form-row form-row-last address-field validate-required">
+                        <label class="" for="billing_postcode">Postcode / Zip <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" autocomplete="no" value="" placeholder="Postcode / Zip" id="billing_postcode" name="billing_postcode" class="input-text">
-                        </p>
-                        <div class="clear"></div>
-                        <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
-                            <label class="" for="billing_email">Email Address <abbr title="required" class="required">*</abbr>
+                        <input type="text" autocomplete="no" value="" placeholder="Postcode / Zip" id="billing_postcode" name="billing_postcode" class="input-text">
+                    </p>
+                    <div class="clear"></div>
+                    <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
+                        <label class="" for="billing_email">Email Address <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" value="luubinhan1989@gmail.com" placeholder="" id="billing_email" name="billing_email" class="input-text">
-                        </p>
-                        <p id="billing_phone_field" class="form-row form-row-last validate-required">
-                            <label class="" for="billing_phone">Phone <abbr title="required" class="required">*</abbr>
+                        <input type="text" value="luubinhan1989@gmail.com" placeholder="" id="billing_email" name="billing_email" class="input-text">
+                    </p>
+                    <p id="billing_phone_field" class="form-row form-row-last validate-required">
+                        <label class="" for="billing_phone">Phone <abbr title="required" class="required">*</abbr>
 			</label>
-                            <input type="text" value="" placeholder="" id="billing_phone" name="billing_phone" class="input-text">
-                        </p>
+                        <input type="text" value="" placeholder="" id="billing_phone" name="billing_phone" class="input-text">
+                    </p>
 
-                        <div class="clear"></div>
+                    <div class="clear"></div>
 
-                        <p>
-                            <input type="submit" value="Save Address" name="save_address" class="button">
-                            <input type="hidden" value="6ba4608faf" name="_n" id="_n"><input type="hidden" value="/StreetStyle/?page_id=14&amp;address=billing" name="_wp_http_referer">
-                            <input type="hidden" value="edit_address" name="action">
-                        </p>
+                    <p>
+                        <input type="submit" value="Save Address" name="save_address" class="button">
+                        <input type="hidden" value="6ba4608faf" name="_n" id="_n"><input type="hidden" value="/StreetStyle/?page_id=14&amp;address=billing" name="_wp_http_referer">
+                        <input type="hidden" value="edit_address" name="action">
+                    </p>
 
-                    </form>
+                </form>
 
-                </div>
-                <!-- woocommerce -->
             </div>
-            <!-- container -->
+            <!-- woocommerce -->
+
         </div>
         <!-- master-inner -->
     </main>

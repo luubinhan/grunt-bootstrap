@@ -35,8 +35,9 @@ module.exports = (grunt) ->
             contact_form: '<%= partialPath %>component/18-contact-form-7.html'            
             slider_swiper: '<%= partialPath %>component/31-slider-swiper.html'            
             subscribe: '<%= partialPath %>component/07-subscribe-form.html'            
-            meta: '<%= partialPath %>component/35-post-meta.html'            
-                        
+            meta: '<%= partialPath %>component/35-post-meta.html'
+            home_hero: '<%= partialPath %>component/36-home-hero.html'
+            page_hero: '<%= partialPath %>component/37-page-hero.html'
           widget: 
             wp_menu: '<%= partialPath %>widget/wp-menu.html'
             product_categories: '<%= partialPath %>widget/woo-product-categories.html'

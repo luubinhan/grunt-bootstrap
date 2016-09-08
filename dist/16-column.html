@@ -35,6 +35,15 @@
         }
     </script>
 
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <script src="js/main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
@@ -49,11 +58,11 @@
                     <div class="row">
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
-                                <li><a href="">Vnexpress</a></li>
-                                <li><a href="">Ngôi sao</a></li>
-                                <li><a href="">iOne</a></li>
-                                <li><a href="">Game thủ</a></li>
-                                <li><a href="18-subscribe-form.html">Subscribe Form</a></li>
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li><a href="1-single.html">Single Post</a></li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
                                 <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
                                 <li><a href="7-woo-login.html">Woo - Login</a></li>
                             </ul>
@@ -78,9 +87,7 @@
     <div id="header">
         <header class="header">
             <div class="header-inner">
-
-
-                <nav class="navbar navbar-default main-nav-wrap">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -149,144 +156,143 @@
 
     <main id="master" class="master">
         <div class="master-inner">
-            <div class="container">
-                <!-- SECTION COLUMNS -->
-                <section class="section section-white our-steps">
-                    <div class="container">
-                        <!-- Title -->
-                        <div class="row">
-                            <div class="col-md-12 align-center">
-                                <h2 class="title-section">Our Steps</h2>
-                                <p class="title-section-details">Three simple steps from concept, contract, and ultimate success.</p>
-                            </div>
-                        </div>
-                        <!-- /Title -->
 
-                        <div class="row">
-                            <div class="col-md-4 align-center">
-                                <img src="images/icon-concept.svg" alt="Concept">
-                                <h4 class="sc-title">Concept</h4>
-                                <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
-                            </div>
-
-                            <div class="col-md-4 align-center">
-                                <img src="images/icon-contract.svg" alt="Contract">
-                                <h4 class="sc-title">Contract</h4>
-                                <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
-                            </div>
-
-                            <div class="col-md-4 align-center">
-                                <img src="images/icon-success.svg" alt="Success">
-                                <h4 class="sc-title">Success</h4>
-                                <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
-                            </div>
+            <!-- SECTION COLUMNS -->
+            <section class="section section-white our-steps">
+                <div class="container">
+                    <!-- Title -->
+                    <div class="row">
+                        <div class="col-md-12 align-center">
+                            <h2 class="title-section">Our Steps</h2>
+                            <p class="title-section-details">Three simple steps from concept, contract, and ultimate success.</p>
                         </div>
                     </div>
-                </section>
-                <!-- /SECTION COLUMNS -->
+                    <!-- /Title -->
 
-                <!-- SECTION COLUMNS -->
-                <section class="section section-white our-features">
-                    <div class="container">
-                        <!-- Title -->
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6">
-                                <h2 class="title-section title-section-left">What makes us better</h2>
-                                <p class="title-section-details">Several advantages that make us better than others.</p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-4 align-center">
+                            <img src="images/icon-concept.svg" alt="Concept">
+                            <h4 class="sc-title">Concept</h4>
+                            <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
                         </div>
-                        <!-- /Title -->
 
-                        <div class="row">
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-moder-design.svg" alt="Modern design">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Modern design</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
+                        <div class="col-md-4 align-center">
+                            <img src="images/icon-contract.svg" alt="Contract">
+                            <h4 class="sc-title">Contract</h4>
+                            <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
+                        </div>
 
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-responsive.svg" alt="Responsive design">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Responsive design</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
-
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-documentation.svg" alt="Well documentation">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Well documentation</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
-
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-unique.svg" alt="Unique graphics">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Unique graphics</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
-
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-perfect.svg" alt="Pixel perfect">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Pixel perfect</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
-
-                            <!-- Feature -->
-                            <div class="col-sm-6 col-md-4">
-                                <div class="row row-feature">
-                                    <div class="col-xs-3 col-sm-3 col-md-3">
-                                        <img src="images/icon-customize.svg" alt="Easy to customize">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-9 col-md-9">
-                                        <h3 class="sc-title">Easy to customize</h3>
-                                        <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /Feature -->
+                        <div class="col-md-4 align-center">
+                            <img src="images/icon-success.svg" alt="Success">
+                            <h4 class="sc-title">Success</h4>
+                            <p class="sc-desc">Maecenas in dui eget erat ullamcorper dignissim amet tortor mauris vehicula duis at eleifend dui, mauris vehicula duis at eleifend dui.</p>
                         </div>
                     </div>
-                </section>
-                <!-- /SECTION COLUMNS -->
-            </div>
-            <!-- container -->
+                </div>
+            </section>
+            <!-- /SECTION COLUMNS -->
+
+            <!-- SECTION COLUMNS -->
+            <section class="section section-white our-features">
+                <div class="container">
+                    <!-- Title -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h2 class="title-section title-section-left">What makes us better</h2>
+                            <p class="title-section-details">Several advantages that make us better than others.</p>
+                        </div>
+                    </div>
+                    <!-- /Title -->
+
+                    <div class="row">
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-moder-design.svg" alt="Modern design">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Modern design</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-responsive.svg" alt="Responsive design">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Responsive design</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-documentation.svg" alt="Well documentation">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Well documentation</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-unique.svg" alt="Unique graphics">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Unique graphics</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-perfect.svg" alt="Pixel perfect">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Pixel perfect</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+
+                        <!-- Feature -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="row row-feature">
+                                <div class="col-xs-3 col-sm-3 col-md-3">
+                                    <img src="images/icon-customize.svg" alt="Easy to customize">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-9">
+                                    <h3 class="sc-title">Easy to customize</h3>
+                                    <p class="sc-desc">Etiam neque massa, tempor vitae tempus eu, pellentesque nec vehicula magna velit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Feature -->
+                    </div>
+                </div>
+            </section>
+            <!-- /SECTION COLUMNS -->
+
         </div>
         <!-- master-inner -->
     </main>
