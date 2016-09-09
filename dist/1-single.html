@@ -60,7 +60,17 @@
                         <div class="col-md-6 col-xs-12 col-lg-8">
                             <ul class="top-nav">
                                 <li><a href="3-page.html">Single Page</a></li>
-                                <li><a href="1-single.html">Single Post</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Post<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="1-single.html">Standard</a>
+                                            <a href="1-single.html">Gallery</a>
+                                            <a href="1-single.html">Video</a>
+                                            <a href="1-single.html">Job</a>
+                                        </li>
+                                    </ul>
+                                </li>
                                 <li><a href="4-archive.html">Archive</a></li>
                                 <li><a href="2-404.html">404</a></li>
                                 <li><a href="5-search.html">Search Result</a></li>
@@ -70,7 +80,7 @@
                         </div>
                         <div class="col-md-6 col-xs-12 col-lg-4">
                             <div class="topnote">
-                                0123.888.0123 (HN) - 0129.233.3555 (TP.HCM)
+                                0943.870.301 - luubinhan1989@gmail.com
                             </div>
                         </div>
                     </div>
@@ -169,15 +179,36 @@
     <main id="master" class="master">
         <div class="master-inner">
 
+            <div class="breadcrumb-wrapper">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <!-- container -->
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
                         <article class="single-post">
+                            <figure class="figure2">
+                                <img src="http://placehold.it/900x400" alt="">
+                            </figure>
                             <header class="single-post-heading">Icing caramels lemon drops candy tiramisu danish.</header>
-                            <aside class="post-meta muted">
-                                <time datetime="2016-09-04">
-		Sunday, September 4th, 2016	</time> at <time>8:59 pm</time> , Uncategorized
+                            <aside class="post-meta">
+                                <div class="post-date">
+                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                </div>
+                                <!-- post-date -->
+                                <div class="post-category">
+                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                </div>
+                                <!-- post-category -->
+
                             </aside>
+                            <!-- post-meta -->
                             <div class="share-social-component">
                                 <div class="ssc-label">
                                     Share this
@@ -210,7 +241,7 @@
                             <meta property="og:url" content="<?php the_permalink(); ?>" />
                             <meta property="og:image" content="<?php the_post_thumbnail('thumbnail'); ?>" />
                             <meta property="og:description" content="<?php echo esc_html(get_the_excerpt()); ?>" />
-                            <section class="post-content">
+                            <section class="single-post-content">
                                 <h1>Lotus root water spinach fennel kombu maize bamboo shoot green bean </h1>
                                 <p>
                                     Veggies sunt bona vobis, proinde vos postulo esse magis okra collard greens water spinach lettuce turnip greens kombu pea prairie turnip nori celtuce gram kale wattle seed sierra leone bologi yarrow.
@@ -269,6 +300,53 @@
 
                                 </p>
                             </section>
+                            <!-- single-post-content -->
+                            <footer class="clearfix post-info-bottom">
+                                <div class="single-tags-holder">
+                                    <h6 class="single-tags-title">Tags:</h6>
+                                    <div class="tags">
+                                        <a rel="tag" href="4-archive.html">DIY</a>, <a rel="tag" href="4-archive.html">Engagement</a>, <a rel="tag" href="">Organizing</a>, <a rel="tag" href="4-archive.html">Venue</a>, <a rel="tag" href="4-archive.html">Wedding</a>
+                                    </div>
+                                </div>
+                                <div class="blog-share">
+                                    <div class="social-share-holder">
+                                        <div class="share-social-component">
+                                            <div class="ssc-label">
+                                                Share this
+                                            </div>
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
+                                            </div>
+                                            <!-- ssc-buttons -->
+                                        </div>
+                                        <!-- share-social-component -->
+                                        <!-- Schema.org markup for Google+ -->
+                                        <meta itemprop="name" content="<?php the_title(); ?>">
+                                        <meta itemprop="description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                                        <meta itemprop="image" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                                        <!-- Twitter Card data -->
+                                        <meta name="twitter:title" content="<?php the_title(); ?>">
+                                        <meta name="twitter:description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                                        <!-- Twitter summary card with large image must be at least 280x150px -->
+                                        <meta name="twitter:image:src" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                                        <!-- Open Graph data -->
+                                        <meta property="og:title" content="<?php the_title(); ?>" />
+                                        <meta property="og:type" content="article" />
+                                        <meta property="og:url" content="<?php the_permalink(); ?>" />
+                                        <meta property="og:image" content="<?php the_post_thumbnail('thumbnail'); ?>" />
+                                        <meta property="og:description" content="<?php echo esc_html(get_the_excerpt()); ?>" />
+                                    </div>
+                                    <!-- social-share-holder -->
+                                </div>
+                                <!-- blog-share -->
+                            </footer>
                         </article>
                         <!-- single-post-->
                         <nav aria-label="page-navigation">
@@ -464,12 +542,11 @@
                             <!-- rpwe-block -->
                         </div>
                         <!-- widget -->
+
                     </div>
                     <!-- col -->
                     <div class="col-md-3">
                         <div class="primary-sidebar">
-
-
                             <div class="widget widget-container">
                                 <div class="widget-title">Recent Posts</div>
                                 <ul>

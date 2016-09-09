@@ -27,6 +27,7 @@ module.exports = (grunt) ->
             share: '<%= partialPath %>component/04-share-social.html'
             pagenavi: '<%= partialPath %>component/05-wp-pagenavi.html'
             subscribe: '<%= partialPath %>component/07-subscribe-form.html'            
+            breadcrumb: '<%= partialPath %>component/09-bootstrap-breadcrumb.html'            
             extra: '<%= partialPath %>component/11-extra.html'
             post: '<%= partialPath %>component/19-content-post.html'
             contact_form: '<%= partialPath %>component/18-contact-form-7.html'

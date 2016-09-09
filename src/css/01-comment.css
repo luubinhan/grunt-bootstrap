@@ -90,9 +90,10 @@
   margin-bottom: 7px;
 }
 .comment-form .form-submit #submit {
-  border: 1px solid #e7e7e7;
+  border: 2px solid #e7e7e7;
   background: #fff;
   padding: 7px 15px;
+  font-weight: bold;
 }
 .comment-metadata a,
 .pingback .comment-edit-link {
@@ -223,5 +224,22 @@
   font-size: 32px;
   position: relative;
   top: -5px;
+}
+.comment-form-author {
+  float: left;
+  width: 30%;
+}
+.comment-form-email {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+}
+.comment-form-url {
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+}
+#commentform .form-submit {
+  clear: both;
 }
 /* WP: comments -------------------------------------------------------------- */
