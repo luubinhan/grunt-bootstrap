@@ -10,6 +10,7 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
@@ -119,7 +120,7 @@
                             <ul class="nav navbar-nav navbar-right">
 
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WP Pages <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WP<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
 
                                         <li class="menu-item"><a href="2-404.html">404</a></li>
@@ -131,13 +132,24 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Woo Commerce Pages <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WooCommerce<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li class="menu-item"><a href="13-woo-products.html">Products</a></li>
                                         <li class="menu-item"><a href="9-woo-cart-1.html">Cart</a></li>
                                         <li class="menu-item"><a href="6-woo-account.html">Account</a></li>
                                         <li class="menu-item"><a href="7-woo-login.html">Login</a></li>
 
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Elements<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="18-typography.html">Typography</a></li>
+                                        <li class="menu-item"><a href="19-infographic.html">Infographic</a></li>
+                                        <li class="menu-item"><a href="20-standard-elements.html">Standard Elements</a></li>
+                                        <li class="menu-item"><a href="21-interactive-elements.html">Interactive Elements</a></li>
+                                        <li class="menu-item"><a href="http://ionicons.com/" target="_blank">Icons</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -157,6 +169,29 @@
     <main id="master" class="master">
         <div class="master-inner">
 
+            <!-- Home Section -->
+            <section class="page-hero page-section bg-dark-alfa-90" data-background="images/section-bg-14.jpg">
+                <div class="container relative">
+
+                    <div class="align-center">
+
+                        <div class="big-icon">
+                            <i class="ion-ios-book-outline"></i>
+                        </div>
+                        <h3 class="small-title">                
+                The great
+                <span class="serif">creative minds</span>
+                in our blog
+                <br class="hidden-xs" />are here
+                to make your
+                <span class="serif">big ideas</span>
+                possible              
+            </h3>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Home Section -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-9">
@@ -179,165 +214,291 @@
                             <br>
                             <section class="row row-posts">
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                                 <!-- ITEM POST -->
-                                <article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <figure class="the-post-thumbnail">
-                                        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-                                    </figure>
-                                    <section class="the-post-content">
-                                        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-                                        <aside class="post-meta">
-                                            <div class="post-date">
-                                                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <article class="item-post clearfix ">
+                                        <figure class="the-post-thumbnail">
+                                            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+                                        </figure>
+
+                                        <section class="the-post-content">
+                                            <aside class="post-meta">
+                                                <div class="post-date">
+                                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                                </div>
+                                                <!-- post-date -->
+                                                <div class="post-category">
+                                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                                </div>
+                                                <!-- post-category -->
+
+                                            </aside>
+                                            <!-- post-meta -->
+                                            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+                                            <footer class="post-excert">
+                                                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                                                sed iusto quis libero ratione vel. Culpa ...
+                                            </footer>
+                                            <!-- post-excert -->
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
                                             </div>
-                                            <!-- post-date -->
-                                            <div class="post-category">
-                                                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-                                            </div>
-                                        </aside>
-                                        <!-- post-meta -->
-                                        <footer class="post-excert">
-                                            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-                                            sed iusto quis libero ratione vel. Culpa ... </footer>
-                                    </section>
-                                </article>
+                                            <!-- ssc-buttons -->
+                                        </section>
+                                        <!-- the-post-content -->
+                                    </article>
+                                </div>
                                 <!-- / ITEM POST -->
                             </section>
                             <!-- row-posts -->
@@ -426,6 +587,7 @@
                 </div>
                 <!-- row -->
             </div>
+            <!-- container -->
 
         </div>
         <!-- master-inner -->
@@ -438,11 +600,11 @@
             <section class="footer-inner">
                 <div class="container">
                     <div class="copyright">
-                        Thông tin Tòa soạn. : 0123.888.0123 (HN) - 0129.233.3555 (TP HCM)
+                        Contact : 0943.870.301 - Email: luubinhan1989@gmail.com
                     </div>
                     <!-- copyright -->
                     <div class="credit">
-                        © Copyright 1997-2013 VnExpress.net, All rights reserved
+                        © Copyright 2011-2016 An.Luu, All rights reserved
                     </div>
                     <!-- credit -->
                 </div>

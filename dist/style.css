@@ -10,6 +10,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: 
 */
 
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Red (active elements, links) #e41919
+# Black (text) #000
+# Dark #222
+# Dark Lighter #252525
+# Gray #F2F2F2
+# Muted #949494
+# Gray Lighter #f8f8f8
+# Mid grey #777
+# Borders #e9e9e9
+# Orange #f47631
+# Yellow #ffce02
+# Cyan #27c5c3f
+# Green #58bf44
+# Blue #43a5de
+# Purple #375acc
+# Red #e13939
+# */
+
+/*------------------------------------------------------------------
+[Typography]
+
+San-serif:          Poppins, arial, sans-serif;
+Serif:              Cookie, "Times New Roman", Times, serif;
+Body:               14px/1.6 @San-serif;
+Section Title:      35px/1.3 @Serif;
+Section Heading:    16px/1.3 @Serif;
+Section Text:       18px/1.8 @San-serif;
+
+
 /* List - Text - Link
 -------------------------------------------------------------- */
 html {
@@ -17,14 +49,17 @@ html {
 }
 
 body {
-  font-size: 75%;
+  font-size: 14px;
   color: #333;
-  line-height: 1.4;
+  line-height: 1.6;
   font-family: Helvetica, Arial, Tahoma, sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
-
+.serif {
+  font-family: 'Cookie', cursive, "Times New Roman", Times, serif;
+}
 a {
   color: #111;
   text-decoration: none;
@@ -194,6 +229,7 @@ h1, .h1, h2, .h2, h3, .h3 {
   font-size: 18px;
 }
 
+
 /* List - Text - Link -------------------------------------------------------------- */
 
 /* Select
@@ -285,7 +321,7 @@ img::-moz-selection {
 .figure2 span{display:block;width:100%;height:100%;overflow:hidden;}
 .overhidden{ overflow:hidden;}
 .loud{ color: #cd010e;}
-.muted{color: #999;}
+.muted{color: #949494;}
 .color{color: rgb(255,51,51) !important;}
 .link{color: #000;}
 ul.style1{
@@ -365,8 +401,10 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 -------------------------------------------------------------- */
 
 .footer{
-  font-size: 11px;
-
+  font-size: 12px;
+  background: #f2f2f2;
+  padding: 20px 0;
+  color: #949494;
 }
 .footer .container{
   
@@ -386,19 +424,38 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 /* Widget
 -------------------------------------------------------------- */
 
+.widget-container {
+  box-sizing: border-box;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    padding: 31px 26px 38px;
+    /* text-align: center; */
+    border: 1px solid #e9e9e9;
+}
 .post-widget-caption {
   margin-bottom: 5px;
+}
+.widget ul {
+  list-style: outside none none;
+  margin: 0;
 }
 .post-category {
   display: inline-block;
 }
-.widget-li {
-  margin-bottom: 15px;
+.widget li {
+  padding-bottom: 11px;
+}
+.widget li a {
+  color: #777;
 }
 .widget-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+    letter-spacing: 0.8px;
 }
 .page-title {
   font-size: 18px;
@@ -410,3 +467,27 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   padding: 30px 0;
 }
 /* Widget -------------------------------------------- */
+
+/* Bootstrap: Override;
+-------------------------------------------------------------- */
+.dropdown-menu {
+  box-shadow: none;
+  border: none;  
+  padding: 10px 0;
+}
+.dropdown-menu > li > a {
+  padding: 8px 20px;
+  color: #777;
+}
+.navbar-static-top {
+  border-bottom: 0;
+}
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+}
+.btn {
+  border-radius: 0px;
+  /* padding: 6px 22px; */
+}
+/* Bootstrap: Override; -------------------------------------------- */

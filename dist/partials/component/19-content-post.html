@@ -1,23 +1,41 @@
 <!-- ITEM POST -->
-<article class="item-post clearfix col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <figure class="the-post-thumbnail">
-        <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
-    </figure>
-    <section class="the-post-content">
-        <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
-        <aside class="post-meta">
-            <div class="post-date">
-                <time datetime="2015-10-26" href="4-archive.html">October 26th, 2015</time>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <article class="item-post clearfix ">
+        <figure class="the-post-thumbnail">
+            <a href="1-single.html"><img src="http://placehold.it/200x200" alt=""></a>
+        </figure>
+
+        <section class="the-post-content">
+            <aside class="post-meta">
+                <div class="post-date">
+                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                </div>
+                <!-- post-date -->
+                <div class="post-category">
+                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                </div>
+                <!-- post-category -->
+
+            </aside>
+            <!-- post-meta -->
+            <header class="heading-post"><a href="1-single.html">Blanditiis sit ut possimus consequatur debitis debitis</a></header>
+
+            <footer class="post-excert">
+                Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
+                sed iusto quis libero ratione vel. Culpa ...
+            </footer>
+            <!-- post-excert -->
+            <div class="ssc-buttons">
+                <div class="social-link-container">
+                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                </div>
+                <!-- social-link-container -->
             </div>
-            <!-- post-date -->
-            <div class="post-category">
-                <a rel="category tag" href="4-archive.html">Uncategorized</a>
-            </div>
-        </aside>
-        <!-- post-meta -->
-        <footer class="post-excert">
-            Qui Nihil cum quia illum Rem Aspernatur aperiam Earum dolor iusto aut rerum cupiditate Dolorem impedit impedit cum Ullam aut fuga et maiores perferendis perspiciatis non numquam Neque velit fugit ipsum Blanditiis animi voluptatum officiis. Et officiis
-            sed iusto quis libero ratione vel. Culpa ... </footer>
-    </section>
-</article>
+            <!-- ssc-buttons -->
+        </section>
+        <!-- the-post-content -->
+    </article>
+</div>
 <!-- / ITEM POST -->
