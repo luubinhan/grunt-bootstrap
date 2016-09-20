@@ -70,6 +70,7 @@ section > container > zone > block
 # jQuery Plugins Included
 
 - matchHeight: https://github.com/liabru/jquery-match-height
+- NO UI Slider: http://refreshless.com/nouislider
 
 ```js
 $(function() {

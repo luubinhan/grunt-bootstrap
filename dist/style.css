@@ -352,6 +352,7 @@ img.align-center{ margin: 0px auto;}
 .align-left{text-align: left !important;}
 .align-right{text-align: right!important;}
 .align-center{text-align: center !important;}
+table.normal {width: 100%;}
 table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;}
 .big-icon {font-size: 40px; display: inline;}
 .mystyle-dropcaps {

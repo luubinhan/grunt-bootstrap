@@ -56,7 +56,7 @@
 	    $('#master').css('min-height', 0);
 	    var heightNeed = 0;
 	    // Caculate height, do no included padding
-	    heightNeed = $(document).height() - ( $('#header').height() + $('#footer').height() + $('#toolbar').height() );
+	    heightNeed = $(window).height() - ( $('#header').height() + $('#footer').height() + $('#toolbar').height() );
 
 	    if ( $('#wpadminbar').length ) {
 	        heightNeed -= $('#wpadminbar').height();
