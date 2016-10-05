@@ -379,16 +379,19 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 
 .toolbar{
   background: #F8F8F8;
-  line-height: 20px;    
+  line-height: 14px;    
+  font-size: 12px;
 }
 #toolbar {
   position: relative;
   z-index: 8;
+ 
 }
 #header {
   position: relative;
   z-index: 7;
 }
+
 .toolbar-inner {
   padding: 5px 0;
 }
@@ -409,6 +412,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 .top-nav a{
   display: inline-block;
   padding: 0px 10px;
+
 }
 .top-nav ul li a {
   display: block;
@@ -480,7 +484,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   padding-bottom: 11px;
 }
 .widget li a {
-  color: #777;
+  
 }
 .widget-title {
   font-size: 13px;
@@ -526,5 +530,12 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 .breadcrumb {
   margin: 0;
   background: transparent;
+}
+.navbar-brand {
+  height: auto;
+  padding: 7px 15px;
+}
+.navbar-default {
+  background: #fff;
 }
 /* Bootstrap: Override; -------------------------------------------- */
