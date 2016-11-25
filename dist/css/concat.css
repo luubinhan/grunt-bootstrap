@@ -662,8 +662,7 @@ body div.wpcf7-spam-blocked {
   margin-bottom: 10px;
 }
 .footer-widgets dt{
-  font-weight: normal;
-  font-size: 11px;
+  font-weight: normal;  
 }
 .footer-widgets dd{
   
@@ -859,10 +858,105 @@ body div.wpcf7-spam-blocked {
 	font-size: 14px;
 	margin-bottom: 20px;
 }
+/* WIDGET: MyStyle Blog; 
+-------------------------------------------------------------- */ 
+.widget-mystyle-blog {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget-mystyle-blog li {
+	border-top: 1px solid #E4E7EA;
+	margin-bottom: 10px;
+}
+.widget-mystyle-blog .figure2 {	
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.widget-blog-desc-holder {
+	overflow: hidden;
+}
+.widget-blog-desc-holder .post-widget-caption {
+	font-size: 14px;
+	color: #424242;
+}
+.widget-blog-desc-holder .post-meta {
+	text-transform: capitalize;
+	font-size: 12px;
+}
+
+/* WIDGET: MyStyle Blog -------------------------------------------------------------- */ 
 .small-title .serif {
 	font-size: 30px;
 }
 
+/* READ NEXT
+---------------------------------------*/
+.read-next {
+    -moz-box-align: stretch;
+    align-items: stretch;
+    display: flex;
+    margin-top: 10rem;
+}
+.read-next-story:hover {
+  color: #fff;
+}
+.read-next-story {
+    -moz-box-flex: 1;
+    background: #3E83C4 none no-repeat scroll center center / cover ;
+    color: #fff;
+    display: flex;
+    flex-grow: 1;
+    min-width: 50%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+
+}
+.read-next-story:before {
+  background: rgba(0,0,0,.6);
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.read-next-story .post {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 7;
+}
+.read-next-story h2 {
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+.read-this-next,
+.you-might-enjoy {  
+  display: inline-block;
+  margin: 0 auto;
+  padding: 3px 15px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;  
+  margin-bottom: 0px;
+  border-radius: 3px;
+  line-height: 1;
+  font-size: 12px;
+}
+.read-this-next:hover,
+.you-might-enjoy:hover {
+  color: #fff;
+  border-color: #fff;
+}
+/* READ NEXT ---------------------------------------*/
 /* WIDGET: Recent post widget extend
 -------------------------------------------------------------- */
 

@@ -56,6 +56,7 @@ module.exports = (grunt) ->
             recent_post_extend: '<%= partialPath %>widget/recent_post_extended.html'
             mystyle_contact: '<%= partialPath %>widget/mystyle_contact.html'
             mystyle_social: '<%= partialPath %>widget/mystyle_social.html'
+            mystyle_blog: '<%= partialPath %>widget/mystyle_blog.html'
           layout:
             header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'
