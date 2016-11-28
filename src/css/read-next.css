@@ -62,4 +62,12 @@
   color: #fff;
   border-color: #fff;
 }
+@media (max-width: 520px) {
+  .read-next {
+    flex-direction: column;
+  }
+  .read-next-story {
+    width: 100%;
+  }
+}
 /* READ NEXT ---------------------------------------*/
