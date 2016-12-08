@@ -886,6 +886,9 @@ body div.wpcf7-spam-blocked {
 	text-transform: capitalize;
 	font-size: 12px;
 }
+.widget-blog-desc-holder .post-date:after {
+	display: none;
+}
 
 /* WIDGET: MyStyle Blog -------------------------------------------------------------- */ 
 .small-title .serif {
@@ -955,6 +958,14 @@ body div.wpcf7-spam-blocked {
 .you-might-enjoy:hover {
   color: #fff;
   border-color: #fff;
+}
+@media (max-width: 520px) {
+  .read-next {
+    flex-direction: column;
+  }
+  .read-next-story {
+    width: 100%;
+  }
 }
 /* READ NEXT ---------------------------------------*/
 /* WIDGET: Recent post widget extend
@@ -1220,6 +1231,87 @@ clear:both;
 
 
 /* Woo: widget_featured_products-------------------------------------------------------------- */
+/* Woocomerce My Account
+--------------------------------------------- */
+.woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.woocommerce-MyAccount-navigation ul a {
+  font-size: 14px;
+  display: block;
+  border-top: 1px solid #ebebeb;
+  padding: 7px 0;
+}
+.woocommerce-MyAccount-navigation ul li:first-child a {
+  border-top: none;
+}
+.woocommerce-MyAccount-content .message {
+  background: #FAFAFA;
+  color: #757575;
+  margin-top: 15px;
+  border: 1px solid #eee;
+  padding: 7px 15px;
+  border-radius: 2px;
+}
+.woocommerce-MyAccount-content a {
+  text-decoration: underline;
+  color: #ED1C22;
+}
+.woocommerce-MyAccount-content .box-icon {
+  display: block;
+  height: 150px;
+  background: #ED1B26;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 15px;
+}
+.woocommerce-MyAccount-content .box-icon i {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.woocommerce-MyAccount-content .box-icon:hover {
+  background: #DB0D17;
+}
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: #ED1B26;
+}
+.woocommerce-MyAccount-content input[type="submit"] {
+  margin-top: 22px;
+  display: inline-block;
+
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+  -webkit-appearance: button;
+  cursor: pointer;
+  text-decoration: none;
+}
+.woocommerce-MyAccount-content input[type="submit"]:hover {
+  background: #DB0D17;
+  color: #fff;
+}
+.woocommerce-MyAccount-content h3 {
+  margin-top: 0;
+}
+/* Woocomerce My Account--------------------------------------------- */
 /* pagination
 -----------------------*/
 

@@ -7,11 +7,13 @@ module.exports = (grunt) ->
         livereload: true
       html:
         files: ['src/**/*.html']
-        tasks: ['htmlbuild:main','concat:css']
+        tasks: ['htmlbuild:main']
       css:
-        files: ['dist/*.css','src/css/*.css','dist/css/*.css']
+        files: ['dist/*.css','src/css/*.css','dist/css/*.css','less/*.less','imports/*.less']
+        tasks: ['less:production']
       scripts:
-        files: ['dist/*.js']        
+        files: ['dist/*.js']     
+        tasks: ['htmlbuild:main']  
     htmlbuild:
       options:            
         sections:
@@ -90,8 +92,17 @@ module.exports = (grunt) ->
           hostname: '<%= serverConf.hostname %>'
           port: '<%= serverConf.port %>'
           livereload: true
-
+    less:
+      production:
+        options:
+          paths: ['imports']
+          imports:
+            reference: ['variables.less', 'mixins.less']               
+        files:          
+          'dist/css/main.css': 'less/main.less'
+             
   require('load-grunt-tasks')(grunt)
   grunt.loadNpmTasks('grunt-contrib-concat')
-  grunt.registerTask 'default', ['connect', 'watch']
-  grunt.registerTask 'build', ['clean:build', 'copy:build', 'concat:css']
+  grunt.loadNpmTasks('assemble-less')
+  grunt.registerTask 'default', ['connect', 'watch' ]
+  grunt.registerTask 'build', ['clean:build', 'copy:build', 'less:production']

@@ -1,47 +1,3 @@
-﻿@charset "UTF-8";
-/*
-Theme Name: 
-Author: An Luu
-Author URI: 
-Description: 
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
-*/
-
-/*------------------------------------------------------------------
-# [Color codes]
-
-# Red (active elements, links) #e41919
-# Black (text) #000
-# Dark #222
-# Dark Lighter #252525
-# Gray #F2F2F2
-# Muted #949494
-# Gray Lighter #f8f8f8
-# Mid grey #777
-# Borders #e9e9e9
-# Orange #f47631
-# Yellow #ffce02
-# Cyan #27c5c3f
-# Green #58bf44
-# Blue #43a5de
-# Purple #375acc
-# Red #e13939
-# */
-
-/*------------------------------------------------------------------
-[Typography]
-
-San-serif:          Poppins, arial, sans-serif;
-Serif:              Cookie, "Times New Roman", Times, serif;
-Body:               14px/1.6 @San-serif;
-Section Title:      35px/1.3 @Serif;
-Section Heading:    16px/1.3 @Serif;
-Section Text:       18px/1.8 @San-serif;
-
-
 /* List - Text - Link
 -------------------------------------------------------------- */
 html {
@@ -50,24 +6,20 @@ html {
 
 body {
   font-size: 14px;
-  color: #333;
+  color: @primary-text-color;
   line-height: 1.6;
-  font-family: Helvetica, Arial, Tahoma, sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: @san-serif;  
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
 }
-.serif {
-  font-family: 'Cookie', cursive, "Times New Roman", Times, serif;
-}
 a {
-  color: #111;
+  color: @link-color;
   text-decoration: none;
   outline: none;
 }
 
 a:hover {
-  color: #000;
+  color: @link-color-hover;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -339,10 +291,10 @@ img::-moz-selection {
   display: inline;
 }
 .overhidden{ overflow:hidden;}
-.loud{ color: #cd010e;}
-.muted{color: #949494;}
+.loud{ color: @black}
+.muted{color: @muted}
 .color{color: rgb(255,51,51) !important;}
-.link{color: #000;}
+.link{color: @link-color}
 ul.style1{
     padding: 0;
     margin: 0 0 20px 0;
@@ -397,7 +349,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 -------------------------------------------------------------- */
 
 .toolbar{
-  background: #F8F8F8;
+  background: @gray-lighter;
   line-height: 14px;    
   font-size: 12px;
 }
@@ -453,8 +405,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 /* Footer
 -------------------------------------------------------------- */
 
-.footer{
-  font-size: 12px;
+.footer{  
   background: #f2f2f2;
   padding: 20px 0;
   color: #949494;
@@ -481,13 +432,10 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 -------------------------------------------------------------- */
 
 .widget-container {
-  box-sizing: border-box;
-    font-size: 13px;
-    line-height: 25px;
-    margin-bottom: 15px;
-    padding: 31px 26px 38px;
-    /* text-align: center; */
-    border: 1px solid #e9e9e9;
+	box-sizing: border-box;		
+	margin-bottom: 15px;
+	padding: 31px 26px 38px;    
+	border: 1px solid @border-color;
 }
 .post-widget-caption {
   margin-bottom: 5px;
@@ -506,12 +454,12 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   
 }
 .widget-title {
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-weight: 600;
-    letter-spacing: 0.8px;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: 600;
+	letter-spacing: 0.8px;
 }
 .page-title {
   font-size: 18px;
