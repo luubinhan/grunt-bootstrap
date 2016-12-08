@@ -100,6 +100,12 @@ module.exports = (grunt) ->
             reference: ['variables.less', 'mixins.less']               
         files:          
           'dist/css/main.css': 'less/main.less'
+          'dist/editor-style.css': 'less/editor-style.less'
+          'dist/style-responsive.css': 'less/style-responsive.less'
+          'src/css/single.css': 'less/single.less'
+          'src/css/subscribe-form.css': 'less/subscribe-form.less'
+          'src/css/mystyle_blog.css': 'less/mystyle_blog.less'
+          'src/css/comment.css': 'less/comment.less'
              
   require('load-grunt-tasks')(grunt)
   grunt.loadNpmTasks('grunt-contrib-concat')
