@@ -72,8 +72,7 @@ dt {
 dd {
   margin-left: 10px;
 }
-.dl-horizontal{*zoom:1;}
-.dl-horizontal:before,.dl-horizontal:after{display:table;line-height:0;content:"";}
+.dl-horizontal:after,.dl-horizontal:after{display:table;line-height:0;content:"";}
 .dl-horizontal:after{clear:both;}
 .dl-horizontal dt {
   float: left;
@@ -236,7 +235,7 @@ img::-moz-selection {
 
 /* MISC 
 -------------------------------------------------------------- */
-.clearfix:before{
+.container:after,.clearfix:after{
   display: block;
   content: "";
   clear: both;
