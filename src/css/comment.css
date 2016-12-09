@@ -1,55 +1,42 @@
 /* WP: comments
 -------------------------------------------------------------- */
-
-.comments-area {
-
-}
-
 .comment-list + .comment-respond,
 .comment-navigation + .comment-respond {
   padding-top: 1.75em;
 }
-
 .comments-title,
 .comment-reply-title {
-  border-top: 4px solid #1a1a1a;  
+  border-top: 4px solid #e9e9e9;
   font-size: 23px;
   font-size: 1.4375rem;
   font-weight: 700;
   line-height: 1.3125;
   padding-top: 1.217391304em;
 }
-
 .comments-title {
   margin-bottom: 1.217391304em;
 }
-
 .comment-list {
   list-style: none;
   margin: 0;
 }
-
 .comment-list article,
 .comment-list .pingback,
 .comment-list .trackback {
   border-top: 1px solid #d1d1d1;
   padding: 1.75em 0;
 }
-
 .comment-list .children {
   list-style: none;
   margin: 0;
 }
-
 .comment-list .children > li {
   padding-left: 0.875em;
 }
-
 .comment-author {
   color: #1a1a1a;
   margin-bottom: 0.4375em;
 }
-
 .comment-author .avatar {
   float: left;
   height: 28px;
@@ -57,61 +44,55 @@
   position: relative;
   width: 28px;
 }
-
 .bypostauthor > article .fn:after {
   content: "\f304";
   left: 3px;
   position: relative;
   top: 5px;
 }
-
 .comment-metadata,
 .pingback .edit-link {
   color: #686868;
-  font-size: 13px;
+  font-size: 12px;
   font-size: 0.8125rem;
   line-height: 1.6153846154;
 }
-
 .comment-metadata {
   margin-bottom: 2.1538461538em;
 }
 .comment-form-comment textarea {
   width: 100%;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #e9e9e9;
 }
 .comment-form-author input,
 .comment-form-url input,
 .comment-form-email input {
   width: 100%;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #e9e9e9;
   margin: 0;
   padding: 4px 7px;
   margin-bottom: 7px;
 }
 .comment-form .form-submit #submit {
-  border: 2px solid #e7e7e7;
+  border: 2px solid #e9e9e9;
   background: #fff;
   padding: 7px 15px;
   font-weight: bold;
 }
 .comment-metadata a,
 .pingback .comment-edit-link {
-  color: #686868;
+  color: #222222;
 }
-
 .comment-metadata a:hover,
 .comment-metadata a:focus,
 .pingback .comment-edit-link:hover,
 .pingback .comment-edit-link:focus {
-  color: #007acc;
+  color: #000000;
 }
-
 .comment-metadata .edit-link,
 .pingback .edit-link {
   display: inline-block;
 }
-
 .comment-metadata .edit-link:before,
 .pingback .edit-link:before {
   content: "\002f";
@@ -119,93 +100,71 @@
   opacity: 0.7;
   padding: 0 0.538461538em;
 }
-
 .comment-content ul,
 .comment-content ol {
   margin: 0 0 1.5em 1.25em;
 }
-
 .comment-content li > ul,
 .comment-content li > ol {
   margin-bottom: 0;
 }
-
 .comment-reply-link {
-  border: 1px solid #d1d1d1;
+  border: 1px solid #e9e9e9;
   display: inline-block;
   line-height: 1;
-  border-radius: 15px;  
-  margin-top: 2.1538461538em;
+  border-radius: 3px;
+  margin-top: 2em;
   padding: 3px 15px;
-  font-size: 11px;
+  font-size: 12px;
 }
-
 .comment-reply-link:hover,
 .comment-reply-link:focus {
-  color: #007acc;
+  color: #000000;
   outline: 0;
 }
-
 .comment-form {
   padding-top: 1.75em;
   margin-bottom: 1.75em;
 }
-
 .comment-form label {
-  color: #686868;
   display: block;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  letter-spacing: 0.076923077em;
-  line-height: 1.6153846154;
-  margin-bottom: 0.5384615385em;
+  font-size: 12px;
   text-transform: uppercase;
 }
-
 .comment-list .comment-form {
   padding-bottom: 1.75em;
 }
-
 .comment-notes,
 .comment-awaiting-moderation,
 .logged-in-as,
 .form-allowed-tags {
-  color: #686868;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.6153846154;
-  margin-bottom: 2.1538461538em;
+  color: #255252 5;
+  font-size: 12px;
+  margin-bottom: 2em;
 }
-
 .no-comments {
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid #e9e9e9;
   font-weight: 700;
   margin: 0;
   padding-top: 1.75em;
 }
-
 .comment-navigation + .no-comments {
   border-top: 0;
   padding-top: 0;
 }
-
 .form-allowed-tags code {
   font-family: Inconsolata, monospace;
 }
-
 .form-submit {
   margin-bottom: 0;
 }
-
 .required {
   color: #007acc;
-  font-family: Merriweather, Georgia, serif;
+  font-family: Poppins, arial, sans-serif;
 }
-
 .comment-reply-title small {
   font-size: 100%;
 }
-
 .comment-reply-title small a {
   border: 0;
   float: right;
@@ -213,12 +172,10 @@
   overflow: hidden;
   width: 26px;
 }
-
 .comment-reply-title small a:hover,
 .comment-reply-title small a:focus {
   color: #1a1a1a;
 }
-
 .comment-reply-title small a:before {
   content: "\f405";
   font-size: 32px;

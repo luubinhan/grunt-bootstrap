@@ -78,19 +78,19 @@
 }
 .comment-form-comment textarea {
   width: 100%;
-  border: 1px solid #e7e7e7;
+  border: 1px solid @border-color;
 }
 .comment-form-author input,
 .comment-form-url input,
 .comment-form-email input {
   width: 100%;
-  border: 1px solid #e7e7e7;
+  border: 1px solid @border-color;
   margin: 0;
   padding: 4px 7px;
   margin-bottom: 7px;
 }
 .comment-form .form-submit #submit {
-  border: 2px solid #e7e7e7;
+  border: 2px solid @border-color;
   background: #fff;
   padding: 7px 15px;
   font-weight: bold;
@@ -134,8 +134,8 @@
   border: 1px solid @border-color;
   display: inline-block;
   line-height: 1;
-  border-radius: 15px;  
-  margin-top: 2.1538461538em;
+  .border-radius;
+  margin-top: 2em;
   padding: 3px 15px;
   font-size: @font-size-small;
 }
@@ -150,31 +150,25 @@
   padding-top: 1.75em;
   margin-bottom: 1.75em;
 }
-
 .comment-form label {  
   display: block;
-  font-size: @font-size-small;
-  letter-spacing: 0.076923077em;
-  line-height: 1.6153846154;
-  margin-bottom: 0.5384615385em;
+  font-size: @font-size-small;  
   text-transform: uppercase;
 }
-
 .comment-list .comment-form {
   padding-bottom: 1.75em;
 }
-
 .comment-notes,
 .comment-awaiting-moderation,
 .logged-in-as,
 .form-allowed-tags {
   color: @dark-lighter;
   font-size: @font-size-small;
-  margin-bottom: 2.1538461538em;
+  margin-bottom: 2em;
 }
 
 .no-comments {
-  border-top: 1px solid #d1d1d1;
+  border-top: 1px solid @border-color;
   font-weight: 700;
   margin: 0;
   padding-top: 1.75em;

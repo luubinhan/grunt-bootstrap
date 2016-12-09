@@ -1,9 +1,9 @@
 /* Single
 -------------------------------------------------------------- */
 .single-post-heading {
-  font-family: Poppins, arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
+  line-height: 1.2;
 }
 .single-tags-title {
   display: inline;

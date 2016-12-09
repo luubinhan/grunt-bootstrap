@@ -10,7 +10,7 @@ module.exports = (grunt) ->
         tasks: ['htmlbuild:main']
       css:
         files: ['dist/*.css','src/css/*.css','dist/css/*.css','less/*.less','imports/*.less']
-        tasks: ['less:production']
+        tasks: ['less:production','concat:css']
       scripts:
         files: ['dist/*.js']     
         tasks: ['htmlbuild:main']  
@@ -30,6 +30,7 @@ module.exports = (grunt) ->
             pagenavi: '<%= partialPath %>component/wp_pagenavi.html'
             subscribe: '<%= partialPath %>component/subscribe_form.html'            
             breadcrumb: '<%= partialPath %>component/bootstrap_breadcrumb.html'            
+            bootstrap_pager: '<%= partialPath %>component/bootstrap_pager.html'            
             extra: '<%= partialPath %>component/extra.html'
             faq: '<%= partialPath %>component/faq.html.html'
             contact_form: '<%= partialPath %>component/contact_form_7.html'
@@ -101,11 +102,14 @@ module.exports = (grunt) ->
         files:          
           'dist/css/main.css': 'less/main.less'
           'dist/editor-style.css': 'less/editor-style.less'
-          'dist/style-responsive.css': 'less/style-responsive.less'
+          'dist/css/style-responsive.css': 'less/style-responsive.less'
           'src/css/single.css': 'less/single.less'
           'src/css/subscribe-form.css': 'less/subscribe-form.less'
           'src/css/mystyle_blog.css': 'less/mystyle_blog.less'
           'src/css/comment.css': 'less/comment.less'
+          'src/css/read-next.css': 'less/read-next.less'
+          'src/css/contact-form-7.css': 'less/contact-form-7.less'
+          'src/css/content-post.css': 'less/content-post.less'
              
   require('load-grunt-tasks')(grunt)
   grunt.loadNpmTasks('grunt-contrib-concat')

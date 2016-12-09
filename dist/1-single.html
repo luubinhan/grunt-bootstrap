@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Document</title>
+
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- DO NOT TOUCH -->
+    <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
+    <link rel="stylesheet" type="text/css" href="css/woocommerce-layout.css">
+
+    <!-- AUTO CONCAT -->
+    <link rel="stylesheet" type="text/css" href="css/concat.css">
+
+    <!-- MANUAL UPDATE -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <!-- Init MAPS -->
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'));
+        }
+    </script>
+
+    <script src="js/animations.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.viewport.mini.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhktXAG6guKrLzHSMjAqPO9ki-SKP556Y" async defer></script>
+</head>
+
+<body class="mystyle">
+    <!-- TOOLBAR -->
+    <div id="toolbar">
+        <nav class="toolbar">
+            <div class="toolbar-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 col-lg-8">
+                            <ul class="top-nav">
+                                <li><a href="3-page.html">Single Page</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single Post<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="1-single.html">Standard</a>
+                                            <a href="1-single.html">Gallery</a>
+                                            <a href="1-single.html">Video</a>
+                                            <a href="1-single.html">Job</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="4-archive.html">Archive</a></li>
+                                <li><a href="2-404.html">404</a></li>
+                                <li><a href="5-search.html">Search Result</a></li>
+                                <li><a href="17-contact-form-7.html">Contact Form 7</a></li>
+                                <li><a href="7-woo-login.html">Woo - Login</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-lg-4">
+                            <div class="topnote">
+                                0943.870.301 - luubinhan1989@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- toolbar-inner -->
+        </nav>
+        <!-- toolbar -->
+    </div>
+    <!-- / TOOLBAR -->
+
+    <!-- HEADER -->
+    <div id="header">
+        <header class="header">
+            <div class="header-inner">
+                <nav class="navbar navbar-default main-nav-wrap navbar-static-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				    <span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				  </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav primary-menu">
+                                <li><a href="index.html">Posts</a></li>
+                                <li><a href="13-woo-products.html">Products</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Component <span class="caret"></span></a>
+
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left search-box" method="get" action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control s" placeholder="Search" name="s">
+                                </div>
+                                <button type="submit" id="searchsubmit" class="btn btn-default"><i class="ion-ios-search-strong"></i></button>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WP<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="2-404.html">404</a></li>
+                                        <li class="menu-item"><a href="3-page.html">Page - Single</a></li>
+                                        <li class="menu-item"><a href="1-single.html">Post - Single</a></li>
+                                        <li class="menu-item"><a href="4-archive.html">Archive</a></li>
+                                        <li class="menu-item"><a href="15-posts-grid.html">Posts - Grid</a></li>
+                                        <li class="menu-item"><a href="16-column.html">Column</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WooCommerce<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="menu-item"><a href="13-woo-products.html">Products</a></li>
+                                        <li class="menu-item"><a href="9-woo-cart-1.html">Cart</a></li>
+                                        <li class="menu-item"><a href="6-woo-account.html">Account</a></li>
+                                        <li class="menu-item"><a href="7-woo-login.html">Login</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Elements<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="menu-item"><a href="18-typography.html">Typography</a></li>
+                                        <li class="menu-item"><a href="19-infographic.html">Infographic</a></li>
+                                        <li class="menu-item"><a href="20-standard-elements.html">Standard Elements</a></li>
+                                        <li class="menu-item"><a href="21-interactive-elements.html">Interactive Elements</a></li>
+                                        <li class="menu-item"><a href="http://ionicons.com/" target="_blank">Icons</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- / header-inner -->
+        </header>
+        <!-- / header -->
+    </div>
+    <!-- / HEADER -->
+
+    <main id="master" class="master">
+        <div class="master-inner">
+
+            <div class="breadcrumb-wrapper">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li class="active">Data</li>
+                    </ol>
+                </div>
+                <!-- container -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <article class="single-post">
+                            <figure class="figure2">
+                                <img src="http://placehold.it/900x400" alt="">
+                            </figure>
+                            <header class="single-post-heading">Icing caramels lemon drops candy tiramisu danish.</header>
+                            <aside class="post-meta">
+                                <div class="post-date">
+                                    <time datetime="2015-10-26" href="4-archive.html">October 26th, 2016</time>
+                                </div>
+                                <!-- post-date -->
+                                <div class="post-category">
+                                    IN <a rel="category tag" href="4-archive.html">Decoration</a>
+                                </div>
+                                <!-- post-category -->
+
+                            </aside>
+                            <!-- post-meta -->
+                            <div class="share-social-component">
+                                <div class="ssc-label">
+                                    Share this
+                                </div>
+                                <div class="ssc-buttons">
+                                    <div class="social-link-container">
+                                        <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                        <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                        <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                    </div>
+                                    <!-- social-link-container -->
+                                </div>
+                                <!-- ssc-buttons -->
+                            </div>
+                            <!-- share-social-component -->
+                            <!-- Schema.org markup for Google+ -->
+                            <meta itemprop="name" content="<?php the_title(); ?>">
+                            <meta itemprop="description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                            <meta itemprop="image" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                            <!-- Twitter Card data -->
+                            <meta name="twitter:title" content="<?php the_title(); ?>">
+                            <meta name="twitter:description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                            <!-- Twitter summary card with large image must be at least 280x150px -->
+                            <meta name="twitter:image:src" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                            <!-- Open Graph data -->
+                            <meta property="og:title" content="<?php the_title(); ?>" />
+                            <meta property="og:type" content="article" />
+                            <meta property="og:url" content="<?php the_permalink(); ?>" />
+                            <meta property="og:image" content="<?php the_post_thumbnail('thumbnail'); ?>" />
+                            <meta property="og:description" content="<?php echo esc_html(get_the_excerpt()); ?>" />
+                            <section class="single-post-content">
+                                <h1>Lotus root water spinach fennel kombu maize bamboo shoot green bean </h1>
+                                <p>
+                                    Veggies sunt bona vobis, proinde vos postulo esse magis okra collard greens water spinach lettuce turnip greens kombu pea prairie turnip nori celtuce gram kale wattle seed sierra leone bologi yarrow.
+                                </p>
+                                <h2>Chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander </h2>
+                                <p>Water chestnut green bean fennel bunya nuts prairie turnip soybean bell pepper plantain winter purslane gourd ricebean yarrow cauliflower okra radicchio taro tatsoi daikon. Grape broccoli rabe onion tomatillo turnip chickpea
+                                    arugula endive cucumber sweet pepper corn brussels sprout ricebean catsear spinach. Carrot lotus root bell pepper ricebean chickweed brussels sprout gumbo.
+                                </p>
+                                <h3>
+						Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.
+					</h3>
+                                <ol>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                </ol>
+                                <p>Celery daikon pea sprouts broccoli sorrel celery horseradish kombu nori tigernut gram kale bush tomato kakadu plum shallot. Endive gourd chickpea garlic dandelion daikon bell pepper asparagus bok choy garlic eggplant peanut
+                                    lotus root sierra leone bologi bitterleaf gumbo kohlrabi cabbage. Rock melon bush tomato okra kombu sierra leone bologi cress. Quandong turnip sorrel aubergine gourd winter purslane garlic spinach napa cabbage wakame
+                                    kohlrabi corn ricebean turnip greens. Radish rock melon courgette prairie turnip winter purslane garlic shallot.
+                                </p>
+                                <h4>
+						Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip
+					</h4>
+                                <p>
+                                    Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut
+                                    corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna
+                                    black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+                                </p>
+                                <ul>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                    <li>spinach napa cabbage wakame kohlrabi</li>
+                                </ul>
+                                <h5>
+						Celery quandong swiss chard chicory earthnut pea potato
+					</h5>
+                                <p>
+                                    Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut
+                                    corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna
+                                    black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+                                </p>
+                                <h6>
+						Celery quandong swiss chard chicory earthnut pea potato
+					</h6>
+                                <p>
+                                    Pea horseradish azuki bean lettuce avocado asparagus okra. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut jÃ­cama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut
+                                    corn groundnut. Chickweed okra pea winter purslane coriander yarrow sweet pepper radish garlic brussels sprout groundnut summer purslane earthnut pea tomato spring onion azuki bean gourd. Gumbo kakadu plum komatsuna
+                                    black-eyed pea green bean zucchini gourd winter purslane silver beet rock melon radish asparagus spinach.
+                                </p>
+                                <blockquote>
+                                    Pea horseradish azuki bean lettuce avocado
+                                </blockquote>
+                                <p>
+                                    <ul>
+                                        <li>Celery quandong swiss chard chicory earthnut</li>
+                                        <li>Salsify taro catsear garlic gram </li>
+                                        <li>Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    <ol>
+                                        <li>Celery quandong swiss chard chicory earthnut</li>
+                                        <li>Salsify taro catsear garlic gram </li>
+                                        <li>Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard</li>
+                                    </ol>
+
+                                </p>
+                            </section>
+                            <!-- single-post-content -->
+                            <footer class="clearfix post-info-bottom">
+                                <div class="single-tags-holder">
+                                    <h6 class="single-tags-title">Tags:</h6>
+                                    <div class="tags">
+                                        <a rel="tag" href="4-archive.html">DIY</a>, <a rel="tag" href="4-archive.html">Engagement</a>, <a rel="tag" href="">Organizing</a>, <a rel="tag" href="4-archive.html">Venue</a>, <a rel="tag" href="4-archive.html">Wedding</a>
+                                    </div>
+                                </div>
+                                <div class="blog-share">
+                                    <div class="social-share-holder">
+                                        <div class="share-social-component">
+                                            <div class="ssc-label">
+                                                Share this
+                                            </div>
+                                            <div class="ssc-buttons">
+                                                <div class="social-link-container">
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&ptitle=<?php echo urlencode(get_the_title()) ; ?>" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                                    <a target="_blank" href="http://twitter.com/share?text=<?php echo urlencode(get_the_title()) ; ?>&url=<?php the_permalink(); ?>" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                                    <a target="_blank" href="mailto:?subject=<?php echo urlencode(get_the_title()) ; ?>&amp;body=Check out this site <?php the_permalink(); ?>" class="s-link s-email"><i class="ion-android-mail"></i> Email</a>
+                                                </div>
+                                                <!-- social-link-container -->
+                                            </div>
+                                            <!-- ssc-buttons -->
+                                        </div>
+                                        <!-- share-social-component -->
+                                        <!-- Schema.org markup for Google+ -->
+                                        <meta itemprop="name" content="<?php the_title(); ?>">
+                                        <meta itemprop="description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                                        <meta itemprop="image" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                                        <!-- Twitter Card data -->
+                                        <meta name="twitter:title" content="<?php the_title(); ?>">
+                                        <meta name="twitter:description" content="<?php echo esc_html(get_the_excerpt()); ?>">
+                                        <!-- Twitter summary card with large image must be at least 280x150px -->
+                                        <meta name="twitter:image:src" content="<?php the_post_thumbnail('thumbnail'); ?>">
+
+                                        <!-- Open Graph data -->
+                                        <meta property="og:title" content="<?php the_title(); ?>" />
+                                        <meta property="og:type" content="article" />
+                                        <meta property="og:url" content="<?php the_permalink(); ?>" />
+                                        <meta property="og:image" content="<?php the_post_thumbnail('thumbnail'); ?>" />
+                                        <meta property="og:description" content="<?php echo esc_html(get_the_excerpt()); ?>" />
+                                    </div>
+                                    <!-- social-share-holder -->
+                                </div>
+                                <!-- blog-share -->
+                            </footer>
+                        </article>
+                        <!-- single-post-->
+                        <nav aria-label="page-navigation">
+                            <ul class="pager">
+                                <li>
+                                    <a href="">&laquo; Older Entries</a>
+                                </li>
+                                <li>
+                                    <a href="">Newer Entries &raquo;</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- COMMENTS -->
+                        <div id="comments" class="comments-area">
+                            <h2 class="comments-title">4 thought on “Hello world!”		</h2>
+                            <ol class="comment-list">
+                                <li id="comment-1" class="comment even thread-even depth-1 parent">
+                                    <article id="div-comment-1" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt="" src="http://2.gravatar.com/avatar/?s=42&amp;d=mm&amp;r=g" class="avatar  photo avatar-default" height="42" width="42"> <b class="fn"><a href="" rel="external nofollow" class="url">Mr WordPress</a></b>                                                <span class="says">says:</span>
+                                            </div>
+                                            <!-- .comment-author -->
+                                            <div class="comment-metadata">
+                                                <a href="">
+                                                    <time datetime="">July 27, 2016 at 11:19 am </time>
+                                                </a>
+                                            </div>
+                                            <!-- .comment-metadata -->
+                                        </footer>
+                                        <!-- .comment-meta -->
+                                        <div class="comment-content">
+                                            <p>Hi, this is a comment.
+                                                <br> To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                                        </div>
+                                        <!-- .comment-content -->
+                                        <div class="reply">
+                                            <a rel="nofollow" class="comment-reply-link" href="" onclick="" aria-label="Reply to Mr WordPress">Reply</a></div>
+                                    </article>
+                                    <!-- .comment-body -->
+                                    <ol class="children">
+                                        <li id="comment-39" class="comment odd alt depth-2">
+                                            <article id="div-comment-39" class="comment-body">
+                                                <footer class="comment-meta">
+                                                    <div class="comment-author vcard">
+                                                        <img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42"> <b class="fn"><a href="http://Website" rel="external nofollow" class="url">An</a></b>                                                        <span class="says">says:</span> </div>
+                                                    <!-- .comment-author -->
+                                                    <div class="comment-metadata">
+                                                        <a href="">
+                                                            <time datetime="2016-08-31T09:27:18+00:00">
+                                        August 31, 2016 at 9:27 am </time>
+                                                        </a>
+                                                    </div>
+                                                    <!-- .comment-metadata -->
+                                                    <p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
+                                                </footer>
+                                                <!-- .comment-meta -->
+                                                <div class="comment-content">
+                                                    <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                                                </div>
+                                                <!-- .comment-content -->
+                                                <div class="reply"><a rel="nofollow" class="comment-reply-link" href="" aria-label="Reply to An">Reply</a></div>
+                                            </article>
+                                            <!-- .comment-body -->
+                                        </li>
+                                        <!-- #comment-## -->
+                                    </ol>
+                                    <!-- .children -->
+                                </li>
+                                <!-- #comment-## -->
+                                <li id="comment-40" class="comment even thread-odd thread-alt depth-1">
+                                    <article id="div-comment-40" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42"> <b class="fn">An</b> <span class="says">says:</span>                                                </div>
+                                            <!-- .comment-author -->
+                                            <div class="comment-metadata">
+                                                <a href="">
+                                                    <time datetime="2016-08-31T09:27:34+00:00">
+                                August 31, 2016 at 9:27 am </time>
+                                                </a>
+                                            </div>
+                                            <!-- .comment-metadata -->
+                                            <p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
+                                        </footer>
+                                        <!-- .comment-meta -->
+                                        <div class="comment-content">
+                                            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                        </div>
+                                        <!-- .comment-content -->
+                                        <div class="reply"><a rel="nofollow" class="comment-reply-link" href="" aria-label="Reply to An">Reply</a></div>
+                                    </article>
+                                    <!-- .comment-body -->
+                                </li>
+                                <!-- #comment-## -->
+                                <li id="comment-41" class="comment odd alt thread-even depth-1">
+                                    <article id="div-comment-41" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42"> <b class="fn">An</b> <span class="says">says:</span>                                                </div>
+                                            <!-- .comment-author -->
+                                            <div class="comment-metadata">
+                                                <a href="">
+                                                    <time datetime="2016-08-31T09:27:59+00:00">
+                                August 31, 2016 at 9:27 am </time>
+                                                </a>
+                                            </div>
+                                            <!-- .comment-metadata -->
+                                            <p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
+                                        </footer>
+                                        <!-- .comment-meta -->
+                                        <div class="comment-content">
+                                            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish
+                                                spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard
+                                                wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                        </div>
+                                        <!-- .comment-content -->
+                                        <div class="reply"><a rel="nofollow" class="comment-reply-link" href="" aria-label="Reply to An">Reply</a></div>
+                                    </article>
+                                    <!-- .comment-body -->
+                                </li>
+                                <!-- #comment-## -->
+                            </ol>
+                            <!-- .comment-list -->
+                            <div id="respond" class="comment-respond">
+                                <h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2016/07/27/hello-world/#respond" style="display:none;">Cancel reply</a></small></h2>
+                                <form action="http://dev.wp/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+                                    <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+                                    <p class="comment-form-comment">
+                                        <label for="comment">Comment</label>
+                                        <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea>
+                                    </p>
+                                    <p class="comment-form-author">
+                                        <label for="author">Name <span class="required">*</span></label>
+                                        <input id="author" name="author" type="text" value="An" size="30" maxlength="245" aria-required="true" required="required">
+                                    </p>
+                                    <p class="comment-form-email">
+                                        <label for="email">Email <span class="required">*</span></label>
+                                        <input id="email" name="email" type="email" value="luubinhan1989@gmail.com" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required">
+                                    </p>
+                                    <p class="comment-form-url">
+                                        <label for="url">Website</label>
+                                        <input id="url" name="url" type="url" value="" size="30" maxlength="200">
+                                    </p>
+                                    <p class="form-submit">
+                                        <input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
+                                        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                    </p>
+                                </form>
+                            </div>
+                            <!-- #respond -->
+                        </div>
+                        <!-- / COMMENTS -->
+
+                        <div class="widget widget-container">
+                            <div class="widget-title">Recent Post</div>
+                            <div class="rpwe-block">
+                                <ul class="rpwe-ul">
+                                    <li class="rpwe-clearfix clearfix cl">
+                                        <a rel="bookmark" href="1-single.html"><img alt="" class="rpwe-alignleft rpwe-thumb wp-post-image" src="http://placehold.it/100x100"></a>
+                                        <h3 class="rpwe-title">
+					<a rel="bookmark" title="" href="1-single.html">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</a>
+				</h3><time class="rpwe-time published">October 26th, 2016</time>
+                                    </li>
+                                    <li class="rpwe-clearfix clearfix cl">
+                                        <a rel="bookmark" href="1-single.html"><img class="rpwe-alignleft rpwe-thumb wp-post-image" src="http://placehold.it/100x100"></a>
+                                        <h3 class="rpwe-title">
+					<a rel="bookmark" href="1-single.html">Gumbo beet greens corn soko endive gumbo gourd. </a>
+				</h3><time class="rpwe-time published">October 26th, 2016</time>
+                                    </li>
+                                    <li class="rpwe-clearfix clearfix cl">
+                                        <a rel="bookmark" href="1-single.html"><img class="rpwe-alignleft rpwe-thumb wp-post-image" src="http://placehold.it/100x100"></a>
+                                        <h3 class="rpwe-title">
+					<a rel="bookmark" href="1-single.html">Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato</a>
+				</h3><time class="rpwe-time published">October 26th, 2016</time>
+                                    </li>
+                                    <li class="rpwe-clearfix clearfix cl">
+                                        <a rel="bookmark" href="1-single.html"><img class="rpwe-alignleft rpwe-thumb wp-post-image" src="http://placehold.it/100x100"></a>
+                                        <h3 class="rpwe-title">
+					<a rel="bookmark" href="1-single.html">Dandelion cucumber earthnut pea peanut soko zucchini.</a>
+				</h3><time class="rpwe-time published">October 26th, 2016</time>
+                                    </li>
+                                    <li class="rpwe-clearfix clearfix cl">
+                                        <a rel="bookmark" href="1-single.html"><img class="rpwe-alignleft rpwe-thumb wp-post-image" src="http://placehold.it/100x100"></a>
+                                        <h3 class="rpwe-title">
+					<a rel="bookmark" href="1-single.html">Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon </a>
+				</h3><time class="rpwe-time published">October 26th, 2016</time>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- rpwe-block -->
+                        </div>
+                        <!-- widget -->
+
+                    </div>
+                    <!-- col -->
+                    <div class="col-md-3">
+                        <div class="primary-sidebar">
+                            <div class="widget widget-container">
+                                <div class="widget-title">Recent Posts</div>
+                                <ul>
+                                    <li><a href="1-single.html">Lorem ipsum dolor sit amet, consectetur.</a></li>
+                                    <li><a href="1-single.html">Commodi, rem omnis laudantium quae perferendis?</a></li>
+                                    <li><a href="1-single.html">Illo quaerat provident repudiandae maxime ratione.</a></li>
+                                </ul>
+                            </div>
+                            <!-- widget -->
+                            <div class="widget widget-container">
+                                <div class="widget-title">Pages</div>
+                                <ul>
+                                    <li class="page_item"><a href="3-page.html">Lorem ipsum.</a></li>
+                                    <li class="page_item"><a href="3-page.html">Fuga, ipsam.</a></li>
+                                    <li class="page_item"><a href="3-page.html">Voluptatem, itaque.</a></li>
+                                </ul>
+                            </div>
+                            <!-- widget -->
+                            <!-- Default Archieve Widget -->
+                            <div class="widget widget-container">
+                                <div class="widget-title">Archives</div>
+                                <ul>
+                                    <li><a title="" href="4-archive.html">April 2013</a></li>
+                                    <li><a title="" href="4-archive.html">March 2013</a></li>
+                                </ul>
+                            </div>
+                            <!-- widget -->
+                            <div class="widget widget-container">
+                                <div class="widget-title">Categories</div>
+                                <ul>
+                                    <li class="cat-item cat-item-1">
+                                        <a title="" href="">Uncategorized</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- widget -->
+                            <!-- WP: MENU -->
+                            <div class="widget widget-container widget-footer">
+                                <div class="widget-title"></div>
+                                <div class="menu-main-menu-container">
+                                    <ul class="menu">
+                                        <li class="menu-item">
+                                            <a href=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- widget -->
+                            <!-- END WP: MENU -->
+                            <div class="widget widget-container">
+                                <div class="widget-title">Meta</div>
+                                <ul>
+                                    <li><a href="" rel="nofollow">Site Admin</a></li>
+                                    <li><a href="" rel="nofollow">Log out</a></li>
+                                    <li><a title="" href="">Entries <abbr title="">RSS</abbr></a></li>
+                                    <li><a title="" href="">Comments <abbr title="">RSS</abbr></a></li>
+                                    <li><a title="" href="">WordPress.org</a></li>
+                                </ul>
+                            </div>
+                            <!-- widget -->
+                            <div class="widget widget-container">
+                                <div class="widget-title">Better wordpress recent comments</div>
+                                <ul class="bwp-rc-ulist">
+                                    <li class="recent-comment">
+                                        <span class="recent-comment-avatar">
+				<img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42">
+			</span>
+                                        <span class="recent-comment-single">			
+				<span class="recent-comment-author">An</span>
+                                        <span class="recent-comment-text"> Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce – </span>
+                                        <a href="%link%" title="%post_title_attr%"><strong>August 31, 2016 at 9:27 am</strong></a>
+                                        </span>
+                                    </li>
+                                    <li class="recent-comment">
+                                        <span class="recent-comment-avatar">
+				<img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42">
+			</span>
+                                        <span class="recent-comment-single">
+				<span class="recent-comment-author">An</span>
+                                        <span class="recent-comment-text"> Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce – </span>
+                                        <a href="%link%" title="%post_title_attr%"><strong>August 31, 2016 at 9:27 am</strong></a>
+                                        </span>
+                                    </li>
+                                    <li class="recent-comment">
+                                        <span class="recent-comment-avatar">
+				<img alt="" src="http://0.gravatar.com/avatar/6cbe89a8dd491f274c325ee3b685bf34?s=42&amp;d=mm&amp;r=g" class="avatar avatar-42 photo" height="42" width="42">
+			</span>
+                                        <span class="recent-comment-single">
+				<span class="recent-comment-author">An</span>
+                                        <span class="recent-comment-text"> Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce – </span>
+                                        <a href="%link%" title="%post_title_attr%"><strong>August 31, 2016 at 9:27 am</strong></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <!-- bwp-rc-ulist -->
+                            </div>
+                            <div id="mystyle_contact-2" class="widget widget-container widget-primary widget_contact">
+                                <div class="widget-title">Contact Us</div>
+                                <div class="widget-contact-text">
+                                    <strong>Our Address</strong>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perferendis unde alias harum, expedita tempora </p>
+                                </div>
+                                <hr>
+                                <div class="widget-contact-text">
+                                    <strong>
+      Call Us
+    </strong>
+                                    <p><a href="tel:123456789">Deserunt officiis suscipit ipsam temporibus reiciendis, hic ipsa amet.</a></p>
+                                </div>
+                                <hr>
+                                <div class="widget-contact-text">
+                                    <strong>
+      Email Us
+    </strong>
+                                    <p>
+                                        <a href="">contactus@gmail.com</a>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="widget-contact-text">
+                                    <strong>
+      Fax
+    </strong>
+                                    <p>
+                                        0123456789
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- widget_contact -->
+                            <div id="mystyle_contact-2" class="widget widget-container widget-primary widget_social">
+                                <div class="widget-title">Connect Us</div>
+                                <div class="social-link-container">
+                                    <a target="_blank" href="" class="s-link s-facebook"><i class="ion-social-facebook"></i> Facebook</a>
+                                    <a target="_blank" href="" class="s-link s-twitter"><i class="ion-social-twitter"></i> Twitter</a>
+                                    <a target="_blank" href="" class="s-link s-email"><i class="ion-social-googleplus"></i> Google+</a>
+                                </div>
+                                <!-- social-link-container -->
+                            </div>
+                            <!-- widget_social -->
+
+                        </div>
+                        <!-- primary-sidebar -->
+                    </div>
+                    <!-- col -->
+                </div>
+                <!-- row -->
+            </div>
+
+        </div>
+        <!-- master-inner -->
+    </main>
+    <!-- master -->
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <footer class="footer">
+            <section class="footer-inner">
+                <div class="container">
+                    <div class="copyright">
+                        Contact : 0943.870.301 - Email: luubinhan1989@gmail.com
+                    </div>
+                    <!-- copyright -->
+                    <div class="credit">
+                        © Copyright 2011-2016 An.Luu, All rights reserved
+                    </div>
+                    <!-- credit -->
+                </div>
+                <!-- container -->
+            </section>
+            <!-- / footer-inner -->
+        </footer>
+        <!-- / footer -->
+    </div>
+    <!-- / FOOTER -->
+</body>
+
+</html>

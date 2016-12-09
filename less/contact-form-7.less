@@ -1,26 +1,31 @@
 /* SECTION CONTACT 
 --------------------------------------------------- */
+.contact-form {
+  
+}
 #map {
   height: 600px;
-}
+} 
 .section-map {
   margin-bottom: 15px;
 }
+
 /* Contact Form 7
 -------------------------------------------------------------- */
+
 body div.wpcf7-response-output {
   padding: 15px;
   margin: 0 0 5px;
   display: inline-block;
 }
-body div.wpcf7-validation-errors {
+body div.wpcf7-validation-errors {  
   background-color: #fcf8e3;
   border-color: #faebcc;
-  color: #8a6d3b;
+  color: #8a6d3b;  
 }
 body div.wpcf7-mail-sent-ok {
   background-color: #dff0d8;
-  border-color: #d6e9c6;
+  border-color: @green;
   color: #3c763d;
 }
 body div.wpcf7-mail-sent-ng {
@@ -37,20 +42,23 @@ body div.wpcf7-spam-blocked {
   width: 100%;
   background-color: #fff;
   border: none;
-  border-bottom: 1px solid #e5e5e5;
-  color: #333333;
+  border-bottom: 1px solid @input-border-color;
+  color: @primary-text-color;
   display: block;
-  font-size: 14px;
+  font-size: @font-size-base;
   height: 34px;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px 0;  
 }
 textarea.wpcf7-form-control {
   height: 150px;
 }
-.wpcf7-form-control.wpcf7-not-valid {
-  border-color: #e41919;
+.wpcf7-text {
+  
 }
-.wpcf7-form-control-wrap {
+.wpcf7-form-control.wpcf7-not-valid {
+  border-color: @red;
+}
+.wpcf7-form-control-wrap  {
   display: block;
   margin-bottom: 20px;
 }
@@ -58,11 +66,12 @@ textarea.wpcf7-form-control {
   height: auto;
   margin-bottom: 20px;
 }
+
 input.wpcf7-submit {
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: uppercase;  
   line-height: 1.1;
   margin-bottom: 0;
   padding: 10px 30px;
@@ -70,25 +79,26 @@ input.wpcf7-submit {
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  background: #428bca;
-  border: 1px solid #428bca;
+  background: @primary-color;
+  border: 1px solid @primary-color;    
   color: #fff;
   width: auto;
   margin-bottom: 15px;
-  border-radius: 3px;
+  .border-radius;
 }
 .wpcf7-response-output {
   margin-top: 15px;
 }
+
 body div.wpcf7-response-output {
   padding: 15px;
   margin: 0 0 5px;
   display: inline-block;
 }
-body div.wpcf7-validation-errors {
+body div.wpcf7-validation-errors {  
   background-color: #fcf8e3;
   border-color: #faebcc;
-  color: #8a6d3b;
+  color: #8a6d3b;  
 }
 body div.wpcf7-mail-sent-ok {
   background-color: #dff0d8;
@@ -107,9 +117,9 @@ body div.wpcf7-spam-blocked {
 }
 /* Responsive for Google noCAPTCHA reCAPTCHA */
 .wpcf7-form-control.g-recaptcha {
-  transform: scale(0.77);
-  -webkit-transform: scale(0.77);
-  transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
 }
 /* Contact Form 7 -------------------------------------------- */
