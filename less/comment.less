@@ -13,15 +13,13 @@
 .comments-title,
 .comment-reply-title {
   border-top: 4px solid @border-color;  
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-size: @font-size-large;
   font-weight: 700;
-  line-height: 1.3125;
-  padding-top: 1.217391304em;
+  padding-top: @glutter;
 }
 
 .comments-title {
-  margin-bottom: 1.217391304em;
+  margin-bottom: @glutter;
 }
 
 .comment-list {
@@ -32,8 +30,8 @@
 .comment-list article,
 .comment-list .pingback,
 .comment-list .trackback {
-  border-top: 1px solid #d1d1d1;
-  padding: 1.75em 0;
+  border-top: 1px solid @border-color;
+  padding: @glutter 0;
 }
 
 .comment-list .children {
@@ -42,7 +40,7 @@
 }
 
 .comment-list .children > li {
-  padding-left: 0.875em;
+  padding-left: @glutter;
 }
 
 .comment-author {
@@ -53,9 +51,9 @@
 .comment-author .avatar {
   float: left;
   height: 28px;
+  width: 28px;
   margin-right: 0.875em;
   position: relative;
-  width: 28px;
 }
 
 .bypostauthor > article .fn:after {
@@ -67,14 +65,12 @@
 
 .comment-metadata,
 .pingback .edit-link {
-  color: #686868;
+  color: @primary-color;
   font-size: @font-size-small;
-  font-size: 0.8125rem;
-  line-height: 1.6153846154;
 }
 
 .comment-metadata {
-  margin-bottom: 2.1538461538em;
+  margin-bottom: @glutter;
 }
 .comment-form-comment textarea {
   width: 100%;
@@ -86,8 +82,8 @@
   width: 100%;
   border: 1px solid @border-color;
   margin: 0;
-  padding: 4px 7px;
-  margin-bottom: 7px;
+  padding: 4px @glutter;
+  margin-bottom: @glutter;
 }
 .comment-form .form-submit #submit {
   border: 2px solid @border-color;
@@ -117,7 +113,7 @@
   content: "\002f";
   display: inline-block;
   opacity: 0.7;
-  padding: 0 0.538461538em;
+  padding: 0 @glutter;
 }
 
 .comment-content ul,
@@ -147,8 +143,8 @@
 }
 
 .comment-form {
-  padding-top: 1.75em;
-  margin-bottom: 1.75em;
+  padding-top: @glutter;
+  margin-bottom: @glutter;
 }
 .comment-form label {  
   display: block;
@@ -156,7 +152,7 @@
   text-transform: uppercase;
 }
 .comment-list .comment-form {
-  padding-bottom: 1.75em;
+  padding-bottom: @glutter;
 }
 .comment-notes,
 .comment-awaiting-moderation,
@@ -171,7 +167,7 @@
   border-top: 1px solid @border-color;
   font-weight: 700;
   margin: 0;
-  padding-top: 1.75em;
+  padding-top: @glutter;
 }
 
 .comment-navigation + .no-comments {
@@ -188,7 +184,7 @@
 }
 
 .required {
-  color: #007acc;
+  color: @red;
   font-family: @san-serif;
 }
 
@@ -206,7 +202,7 @@
 
 .comment-reply-title small a:hover,
 .comment-reply-title small a:focus {
-  color: #1a1a1a;
+  color: @secondary-color;
 }
 
 .comment-reply-title small a:before {

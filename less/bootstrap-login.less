@@ -3,7 +3,7 @@
 .social-login {
   position:relative;
   padding: 10px 0 15px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid @border-color;
   margin-bottom: 18px;
 }
 .social-login a{
@@ -11,9 +11,8 @@
   float: left;  
   text-decoration: none;
   color: #fff;
-  border: 1px solid rgba(0,0,0,0.05);
-  padding: 12px;  
-  font-size: 12px;
+  border: 1px solid @border-color;
+  padding: @glutter;    
   width: 44%;
   text-transform: uppercase;
   margin: 0 3%;
@@ -26,10 +25,10 @@
   top: 2px;
 }
 .social-login a:first-child{
-  background-color: #49639F;
+  background-color: @primary-color;
 }
 .social-login a:last-child{
-  background-color: #DF4A32;
+  background-color: @primary-color;
 }
 .section-login {
   margin-bottom: 60px;
@@ -40,7 +39,7 @@
   content: "";
   width: 1px;
   height: 90%;
-  background: #eee;
+  background: @muted;
   position: absolute;
   left: 50%;
   top: 5%;

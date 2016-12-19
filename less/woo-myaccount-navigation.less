@@ -5,11 +5,10 @@
   padding: 0;
   margin: 0;
 }
-.woocommerce-MyAccount-navigation ul a {
-  font-size: 14px;
+.woocommerce-MyAccount-navigation ul a {  
   display: block;
-  border-top: 1px solid #ebebeb;
-  padding: 7px 0;
+  border-top: 1px solid @border-color;
+  padding: @glutter 0;
 }
 .woocommerce-MyAccount-navigation ul li:first-child a {
   border-top: none;
@@ -24,12 +23,12 @@
 }
 .woocommerce-MyAccount-content a {
   text-decoration: underline;
-  color: #ED1C22;
+  color: @primary-color;
 }
 .woocommerce-MyAccount-content .box-icon {
   display: block;
   height: 150px;
-  background: #ED1B26;
+  background: @primary-color;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -40,18 +39,17 @@
   display: block;
   color: #fff;
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: @glutter;
 }
 .woocommerce-MyAccount-content .box-icon:hover {
-  background: #DB0D17;
+  background: @primary-color;
 }
 .woocommerce-MyAccount-navigation ul li.is-active a {
-  color: #ED1B26;
+  color: @secondary-color;
 }
 .woocommerce-MyAccount-content input[type="submit"] {
   margin-top: 22px;
   display: inline-block;
-
   margin-bottom: 0;
   font-weight: normal;
   text-align: center;
@@ -65,14 +63,14 @@
   -o-user-select: none;
   user-select: none;
   color: #ffffff;
-  background-color: #d2322d;
-  border-color: #ac2925;
+  background-color: @primary-color;
+  border-color: @primary-color;
   -webkit-appearance: button;
   cursor: pointer;
   text-decoration: none;
 }
 .woocommerce-MyAccount-content input[type="submit"]:hover {
-  background: #DB0D17;
+  background: @secondary-color;
   color: #fff;
 }
 .woocommerce-MyAccount-content h3 {

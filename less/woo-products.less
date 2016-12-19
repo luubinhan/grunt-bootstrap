@@ -16,15 +16,15 @@ li.product {
   margin-left: 0;
 }
 .amount {
-  font-size: 18px;  
-  padding-right: 10px;
+  font-size: @font-size-large;  
+  padding-right: @glutter;
 }
 .add_to_cart_button {
   display: inline-block;
-  background: #2d2d2d;
+  background: @primary-color;
   color: #fff;
   text-decoration: none;
-  padding: 2px 7px;
+  padding: 2px @glutter;
 }
 a.add_to_cart_button:hover, 
 a.add_to_cart_button:focus {
@@ -34,7 +34,7 @@ a.add_to_cart_button:focus {
 .product > a:first-child {
   text-decoration: none;
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: @glutter;
   position: relative;
 }
 .product .onsale {
@@ -42,7 +42,7 @@ a.add_to_cart_button:focus {
   left: 7px;
   top: 7px;
   background: #fff;
-  padding: 2px 7px 1px;
+  padding: 2px @glutter 1px;
   line-height: 1;
 }
 

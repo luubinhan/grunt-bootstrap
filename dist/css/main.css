@@ -84,10 +84,7 @@ dt {
 dd {
   margin-left: 10px;
 }
-.dl-horizontal {
-  *zoom: 1;
-}
-.dl-horizontal:before,
+.dl-horizontal:after,
 .dl-horizontal:after {
   display: table;
   line-height: 0;
@@ -254,36 +251,11 @@ img::-moz-selection {
 /* Select-------------------------------------------------------------- */
 /* MISC 
 -------------------------------------------------------------- */
-.clear {
-  clear: both;
+.container:after,
+.clearfix:after {
   display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-.clearfix:before,
-.cf:before,
-.clearfix:after,
-.cf:after,
-.container:before,
-.container:after {
-  content: "\0020";
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-.clearfix:after,
-.cf:after,
-.container:after {
+  content: "";
   clear: both;
-}
-.clearfix,
-.cf,
-.container {
-  *zoom: 1;
 }
 .pl-10 {
   padding-left: 10px !important;
