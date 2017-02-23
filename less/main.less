@@ -1,3 +1,4 @@
+
 /* List - Text - Link
 -------------------------------------------------------------- */
 html {
@@ -202,6 +203,13 @@ button {
   -webkit-appearance: none;
    -moz-appearance:    none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
 /* List - Text - Link -------------------------------------------------------------- */
 
 /* Select
@@ -369,7 +377,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 -------------------------------------------------------------- */
 
 .toolbar{
-  background: @gray-lighter;
+  background: @bg-gray;
   line-height: 14px;    
   font-size: 12px;
 }
@@ -496,7 +504,7 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
 }
 .dropdown-menu > li > a {
   padding: 8px 20px;
-  color: @mid-gray;
+  color: @bg-gray;
 }
 .navbar-static-top {
   border-bottom: 0;
