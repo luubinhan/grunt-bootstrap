@@ -1,4 +1,3 @@
-
 /* List - Text - Link
 -------------------------------------------------------------- */
 html {
@@ -318,6 +317,16 @@ img::-moz-selection {
   max-height: 100%;
   display: inline;
 }
+.grid-10(10%);
+.grid-20(20%);
+.grid-30(30%);
+.grid-40(40%);
+.grid-50(50%);
+.grid-60(60%);
+.grid-70(70%);
+.grid-80(80%);
+.grid-90(90%);
+
 .overhidden{ overflow:hidden;}
 .loud{ color: @black}
 .muted{color: @muted}
@@ -397,23 +406,16 @@ table.normal tr td{ vertical-align: top; padding: 0 10px 5px 0;text-align: left;
   list-style: none;
   margin: 0;
   padding: 0;
+  li {
+    display: inline-block;
+    a{
+      display: inline-block;
+      padding: 0px 10px;
+    }
+  }
 }
 .topnote{
   text-align: right;
-}
-.top-nav li {
-  display: inline-block;
-}
-.top-nav ul li {
-  display: block;
-}
-.top-nav a{
-  display: inline-block;
-  padding: 0px 10px;
-
-}
-.top-nav ul li a {
-  display: block;
 }
 .header{
   margin-bottom: 0;

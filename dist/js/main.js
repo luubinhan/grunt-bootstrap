@@ -203,8 +203,10 @@ var MainJS = (function($){
 		$('ul.products').toggleClass('layout-list');
 	}
 
-	/*
-	* Draw Google Map
+	/**
+   	* Draw Google Map
+	* @param {Array} locations
+	* @return null
 	*/
 	function initializeGoogleMap(locations) {    	
 

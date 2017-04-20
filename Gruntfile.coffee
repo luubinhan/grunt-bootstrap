@@ -47,16 +47,6 @@ module.exports = (grunt) ->
             
           widget: 
             wp_menu: '<%= partialPath %>widget/wp_menu.html'
-            product_categories: '<%= partialPath %>widget/woo_product_categories.html'
-            top_rated_product: '<%= partialPath %>widget/woo_top_rated_product.html'
-            bwr_comments: '<%= partialPath %>widget/better_wordpress_recent_comments.html'
-            recent_post: '<%= partialPath %>widget/wp_recent_post.html'
-            pages: '<%= partialPath %>widget/wp_pages.html'
-            archieve: '<%= partialPath %>widget/wp_archieve.html'
-            categories: '<%= partialPath %>widget/wp_categories.html'
-            menu: '<%= partialPath %>widget/wp_menu.html'
-            meta: '<%= partialPath %>widget/wp_meta.html'
-            recent_post_extend: '<%= partialPath %>widget/recent_post_extended.html'
             mystyle_contact: '<%= partialPath %>widget/mystyle_contact.html'
             mystyle_social: '<%= partialPath %>widget/mystyle_social.html'
             mystyle_blog: '<%= partialPath %>widget/mystyle_blog.html'
