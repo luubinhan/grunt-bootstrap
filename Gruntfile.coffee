@@ -9,7 +9,7 @@ module.exports = (grunt) ->
         files: ['src/**/*.html']
         tasks: ['htmlbuild:main']
       css:
-        files: ['dist/*.css','src/css/*.css','dist/css/*.css','less/*.less','imports/*.less']
+        files: ['less/*.less','imports/*.less']
         tasks: ['less:production']
       scripts:
         files: ['dist/*.js']     
@@ -50,7 +50,7 @@ module.exports = (grunt) ->
     concat:      
       css:
         src: ['src/css/*.css'] 
-        dest: 'dist/css/concat.css'     
+        dest: 'dist/css/concat.css'         
     connect:
       server:
         options:
@@ -67,9 +67,7 @@ module.exports = (grunt) ->
         files:          
           'dist/css/main.css': 'less/main.less'
           'dist/editor-style.css': 'less/editor-style.less'
-          'dist/css/style-responsive.css': 'less/style-responsive.less'
-          'dist/css/concat.css': 'less/concat.less'          
-             
+          'dist/css/style-responsive.css': 'less/style-responsive.less' 
   require('load-grunt-tasks')(grunt)
   grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('assemble-less')
