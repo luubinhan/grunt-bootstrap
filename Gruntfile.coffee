@@ -19,6 +19,8 @@ module.exports = (grunt) ->
         sections:
           component: 
             meta: '<%= partialPath %>component/post_meta.html'
+            primary_menu: '<%= partialPath %>component/primary_menu.html'
+            common_header: '<%= partialPath %>component/common_header.html'
           widget: 
             wp_menu: '<%= partialPath %>widget/wp_menu.html'
             mystyle_contact: '<%= partialPath %>widget/mystyle_contact.html'
