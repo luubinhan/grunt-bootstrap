@@ -28,7 +28,6 @@ module.exports = (grunt) ->
             mystyle_blog: '<%= partialPath %>widget/mystyle_blog.html'
             mystyle_subscribe: '<%= partialPath %>widget/mystyle_subscribe.html'
           layout:
-            header: '<%= partialPath %>layout/header.html'
             footer: '<%= partialPath %>layout/footer.html'
         data:
           version: '<%= grunt.template.today("yyyymmddHH") %>'
