@@ -10,8 +10,8 @@
   "author": "luckyluu",
   "license": "MIT",
   "devDependencies": {
-    "browserify": "^14.4.0",
-    "grunt": "^1.0.0",
+    "browserify": "^16.2.3",
+    "grunt": "^1.0.3",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-connect": "^1.0.2",
@@ -19,7 +19,7 @@
     "grunt-contrib-uglify": "^3.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-html-build": "^0.7.1",
-    "load-grunt-tasks": "^3.5.2",
-    "grunt-sass": "^2.0.0"
+    "grunt-sass": "^3.0.1",
+    "load-grunt-tasks": "^3.5.2"
   }
 }
