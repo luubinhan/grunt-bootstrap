@@ -1,7 +1,7 @@
 {
-  "name": "grunt-init-template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "grunt-bootstrap",
+  "version": "1.0.1",
+  "description": "luubinhan",
   "main": "index.js",
   "scripts": {
     "start": "grunt",
@@ -13,13 +13,13 @@
     "browserify": "^16.2.3",
     "grunt": "^1.0.3",
     "grunt-browserify": "^5.0.0",
-    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-html-build": "^0.7.1",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^3.0.2",
     "load-grunt-tasks": "^3.5.2"
   }
 }

@@ -18,7 +18,7 @@ grunt-template
 
 # Partials
 
-## component - 
+## components
 
 ## layout
 
