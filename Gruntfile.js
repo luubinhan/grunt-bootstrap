@@ -89,10 +89,31 @@ module.exports = function(grunt) {
           'docs/css/style-responsive.css': 'scss/style-responsive.scss'
         }
       }
+    },
+    concat: {
+      dist: {
+        src: ['src/js/*.js'],
+        dest: 'docs/js/output.js'
+      }
+    },
+    jshint: {
+      // define the files to lint
+      files: ['src/js/*.js'],
+      // configure JSHint (documented at http://www.jshint.com/docs/)
+      options: {
+        // more options here if you want to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true
+        }
+      }
     }
   });
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.registerTask('default', ['connect', 'watch', 'sass']);
   return grunt.registerTask('build', ['clean:build', 'copy:build', 'sass']);
 };
